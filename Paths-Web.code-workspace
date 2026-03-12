@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "name": "Paths Web",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.next": true,
+      "**/node_modules": true
+    }
+  }
+}
