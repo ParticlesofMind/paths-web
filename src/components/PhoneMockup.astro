@@ -1,0 +1,52 @@
+---
+const habits = [
+  { label: "Morning run",  time: "07:00", color: "#8aa870", done: true  },
+  { label: "Read",         time: "08:30", color: "#d62828", done: true  },
+  { label: "Meditate",     time: "12:00", color: "#6aa090", done: false },
+  { label: "Evening walk", time: "18:00", color: "#8f86a8", done: false },
+];
+---
+
+<div class="relative w-[260px] h-[530px] rounded-[42px] border-[5px] border-[#0d0d0d] bg-white overflow-hidden shadow-[8px_8px_0px_#0d0d0d]">
+  <!-- Dynamic island -->
+  <div class="absolute top-3 left-1/2 -translate-x-1/2 w-20 h-5 bg-[#0d0d0d] rounded-full z-10"></div>
+
+  <!-- Screen -->
+  <div class="absolute inset-0 bg-[#fafafa] pt-10 px-5 flex flex-col">
+    <div class="mt-4 mb-5">
+      <p class="text-[9px] font-black uppercase tracking-[0.2em] text-[#0d0d0d]/30">Today</p>
+      <p class="text-xl font-black tracking-tight mt-1">Good morning</p>
+    </div>
+
+    <div class="flex flex-col gap-3">
+      {habits.map((h) => (
+        <div class="flex items-center gap-3">
+          <div
+            class="w-7 h-7 rounded-lg flex-none"
+            style={`background-color: ${h.color}; opacity: ${h.done ? 1 : 0.28}`}
+          ></div>
+          <div class="flex-1 min-w-0">
+            <p class="text-[13px] font-bold truncate" style={`opacity: ${h.done ? 1 : 0.38}`}>
+              {h.label}
+            </p>
+            <p class="text-[10px] text-[#0d0d0d]/30">{h.time}</p>
+          </div>
+          {h.done && <div class="w-4 h-4 rounded-full bg-[#8aa870] flex-none"></div>}
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-auto mb-6">
+      <div class="flex items-center justify-between mb-2">
+        <p class="text-[9px] font-black uppercase tracking-[0.2em] text-[#0d0d0d]/35">Streak</p>
+        <p class="text-[10px] font-black text-[#d62828]">14 days</p>
+      </div>
+      <div class="h-1 bg-[#0d0d0d]/10">
+        <div class="h-1 bg-[#d62828] w-3/5"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home indicator -->
+  <div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-16 h-[3px] bg-[#0d0d0d]/20"></div>
+</div>
