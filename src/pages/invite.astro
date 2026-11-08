@@ -1,8 +1,139 @@
 ---
+// The page an invite link lands on.
+//
+// A Paths invite is a token identifying whoever sent it, and optionally the crew
+// they want the person to land in:
+//
+//     https://particlesofmind.com/invite?token=<token>[&crew=<uuid>]
+//
+// It is built by ReferralInvite.link(for:) and CrewInviteLink.link(token:groupId:)
+// in the Paths repo. Those used to send the app's own scheme, which only worked
+// for someone who already had Paths installed; this page is what the https form
+// needs to exist.
+//
+// What it does: hands the token straight to the app when Paths is installed, by
+// opening paths://invite with the same query, and otherwise explains how to get
+// there. The handover is done in the browser because the token is in the query
+// string, which a static page cannot see while it is being built.
+//
+// Until the app ships Universal Links (an Associated Domains entitlement and an
+// apple-app-site-association file on this domain), installing from here cannot
+// carry the token through by itself: the person has to come back to the link
+// once Paths is installed. The page says so rather than pretending otherwise.
 import Layout from "../layouts/Layout.astro";
-import Unwritten from "../components/Unwritten.astro";
+import { site } from "../content/site";
 ---
 
-<Layout title="You were invited to Paths" noindex>
-  <Unwritten title="You were invited to Paths" needs="It must carry the referral token through installation and open the app." />
+<Layout
+  title="You were invited to Paths"
+  description="Open your invite to Paths, a proof-based routine builder for iPhone, iPad and Apple Watch."
+  noindex
+>
+  <section class="invite mx-auto max-w-2xl px-4 py-16">
+    <h1 class="text-4xl font-bold">You were invited to Paths</h1>
+
+    <p class="mt-6 text-lg">
+      Someone you know is building a routine in Paths and wants you in it. Paths is for becoming who you mean to be by
+      doing it: you choose a path, schedule the practice, and prove each session as you do it.
+    </p>
+
+    <div class="invite-actions mt-10" data-invite-actions hidden>
+      <a class="invite-button" href="paths://invite" data-open-app>Open in Paths</a>
+      <p class="invite-note mt-3">Already have Paths? This carries the invite into the app.</p>
+    </div>
+
+    <div class="invite-card mt-10">
+      <h2 class="text-xl font-semibold">If you do not have Paths yet</h2>
+      {
+        site.appStoreUrl ? (
+          <p class="mt-3">
+            <a class="invite-button" href={site.appStoreUrl}>
+              Get Paths for {site.platform}
+            </a>
+          </p>
+        ) : (
+          <p class="mt-3">Paths is coming to the App Store for {site.platform}.</p>
+        )
+      }
+      <p class="mt-3">
+        Install it first, then open this same link again on the device you installed it on. The invite is applied when
+        you sign up.
+      </p>
+      <p class="mt-3 invite-code" data-invite-code hidden>
+        Your invite code: <code data-invite-code-value></code>
+      </p>
+    </div>
+
+    <p class="mt-10 invite-note" data-no-token hidden>
+      This link has no invite on it. Ask whoever invited you to send theirs again, or
+      <a href="/">read about Paths</a> first.
+    </p>
+
+    <p class="mt-10 invite-note">
+      Nothing about you is sent anywhere by opening this page. The invite is attached to your account only when you
+      sign up in the app.
+    </p>
+  </section>
 </Layout>
+
+<script>
+  // The token lives in the query string, so the handover is built here rather
+  // than at build time. Only `token` and `crew` are carried across, and nothing
+  // is sent anywhere: the link opens the app on this device.
+  const params = new URLSearchParams(window.location.search);
+  const token = (params.get("token") ?? "").trim();
+  const crew = (params.get("crew") ?? "").trim();
+
+  const actions = document.querySelector<HTMLElement>("[data-invite-actions]");
+  const openApp = document.querySelector<HTMLAnchorElement>("[data-open-app]");
+  const codeLine = document.querySelector<HTMLElement>("[data-invite-code]");
+  const codeValue = document.querySelector<HTMLElement>("[data-invite-code-value]");
+  const noToken = document.querySelector<HTMLElement>("[data-no-token]");
+
+  const isToken = /^[A-Za-z0-9._-]{4,128}$/.test(token);
+  const isCrew = /^[0-9a-fA-F-]{36}$/.test(crew);
+
+  if (isToken) {
+    const deepLink = new URL("paths://invite");
+    deepLink.searchParams.set("token", token);
+    if (isCrew) deepLink.searchParams.set("crew", crew);
+
+    if (openApp) openApp.href = deepLink.toString();
+    if (actions) actions.hidden = false;
+    if (codeValue && codeLine) {
+      codeValue.textContent = token;
+      codeLine.hidden = false;
+    }
+  } else if (noToken) {
+    noToken.hidden = false;
+  }
+</script>
+
+<style>
+  .invite-button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    background: var(--site-ink);
+    color: var(--site-paper);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .invite-card {
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--site-ink-40);
+    border-radius: 0.75rem;
+    background: var(--site-surface);
+  }
+
+  .invite-note {
+    color: var(--site-ink-60);
+    font-size: 0.95rem;
+  }
+
+  .invite code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    word-break: break-all;
+  }
+</style>
