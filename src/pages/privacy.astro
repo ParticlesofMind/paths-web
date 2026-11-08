@@ -1,0 +1,295 @@
+---
+// Privacy Policy for the Paths app. Written from what the app and its backend
+// do (Paths repo: privacy manifest, Info.plist, Supabase migrations and edge
+// functions, the Arete client, onboarding contacts, account deletion), not
+// from intentions. When the app's data handling changes, change this page.
+//
+// Placeholders are <mark>[TO CONFIRM: ...]</mark>, shared with /terms where
+// they overlap. Two of them flag gaps between the app and what a policy should
+// be able to say: deletion leaves uploaded files behind, and the database lets
+// any signed-in account read every profile, pattern record and file.
+//
+// Kept out of search results (noindex) until the author approves the text.
+import Layout from "../layouts/Layout.astro";
+import LegalPage from "../components/LegalPage.astro";
+---
+
+<Layout title="Privacy Policy" description="What Paths collects, why, and what you can do about it." noindex>
+  <LegalPage title="Privacy Policy" draft>
+    <mark slot="updated">[TO CONFIRM: effective date]</mark>
+
+    <p>
+      This policy explains what the Paths app collects, why, who else handles it, and what you can do about it. Paths
+      runs on iPhone, iPad and Apple Watch. It is made by <mark>[TO CONFIRM: legal entity name]</mark>
+      ("we", "us"), <mark>[TO CONFIRM: postal address]</mark>.
+    </p>
+
+    <h2 id="summary">The short version</h2>
+    <ul>
+      <li>We collect what Paths needs to run your account, your patterns and the proof you submit.</li>
+      <li>We do not sell your data, show ads, or track you across other apps and websites.</li>
+      <li>What you publish in Paths is seen by your friends in Paths.</li>
+      <li>Messages to Arete go to Anthropic to write a reply. Our server does not keep them.</li>
+      <li>You can delete your account in the app.</li>
+    </ul>
+
+    <h2 id="collect">What we collect, and why</h2>
+
+    <h3>Your account</h3>
+    <ul>
+      <li>
+        <strong>Sign-in.</strong> If you sign up with email, your email address and password. The password is stored
+        only in hashed form. If you use Sign in with Apple, Apple gives us an identifier and the email address you
+        choose to share, which can be a private relay address.
+      </li>
+      <li>
+        <strong>Profile.</strong> Your name, date of birth, gender, the path (archetype) you choose, a username the app
+        creates for you, the date you joined, and when you agreed to the Terms.
+      </li>
+    </ul>
+    <p>
+      We use these to run your account, to check that you are at least 16, to show your name and username to your
+      friends, and to give Arete context.
+    </p>
+
+    <h3>Your patterns and proof</h3>
+    <ul>
+      <li>
+        <strong>Patterns.</strong> What you schedule: each pattern's name, method, days and times, time zone and
+        reminder settings, and every completion, skip and extra time you use.
+      </li>
+      <li>
+        <strong>Proof.</strong> What a method asks for when you complete it. Depending on the method, that is a photo you
+        take with the camera, a drawing you make in the app, an audio recording, the text or result the method produces,
+        or a tracked walk or run.
+      </li>
+      <li>
+        <strong>Walks and runs.</strong> While you track one, Paths records your route with GPS, and your distance,
+        speed, duration, steps and floors climbed. An estimated calorie figure is saved with it.
+      </li>
+      <li>
+        <strong>Exercise counts.</strong> For push-ups, squats and planks, the camera watches your body position and the
+        app counts on your device. Only the count or the time is saved. The camera images are not uploaded.
+      </li>
+      <li>
+        <strong>Reflections and progress.</strong> Your answers to Brief and Debrief questions, reports Arete writes
+        about your badges, and your points, levels, badges, streaks and PATH scores.
+      </li>
+    </ul>
+    <p>We use these to show your schedule, record and check completions, work out your progress, and show your friends what you publish.</p>
+
+    <h3>Friends and invitations</h3>
+    <ul>
+      <li>
+        <strong>Friends.</strong> Who you have added, who you have asked, who has asked you, and who you have blocked.
+      </li>
+      <li>
+        <strong>Feedback.</strong> Reactions, reviews, awards and challenges you give or receive, and the notices about
+        them.
+      </li>
+      <li>
+        <strong>Contacts.</strong> If you allow it, Paths reads the names and phone numbers in your contacts on your
+        device so you can pick people. For each person you pick, we store only a fingerprint (a one-way hash) of the
+        last eight digits of their number, never their name or number. We use it only to recognise them if they join
+        Paths. Arete is told only how many people you invited, never who.
+      </li>
+      <li>
+        <strong>Invitations.</strong> An invitation is sent from your own Messages app or share sheet, with your name and
+        your invite link. We do not send it. If someone joins through your link, we record that you invited them and
+        when they complete their first pattern.
+      </li>
+      <li>
+        <strong>Reports and suggestions.</strong> The Report button on a post opens an email to us with that post's
+        username, pattern and date. If you send a report or a feature suggestion, we receive what you write, and for
+        a report your email address.
+      </li>
+    </ul>
+
+    <h3>Subscriptions</h3>
+    <p>
+      You buy Plus or Max through Apple's App Store. We never see your payment details. We store which plan you have,
+      whether it is active, the App Store product, and when it last changed.
+    </p>
+
+    <h3>Arete</h3>
+    <p>When you write to Arete, the app sends your message and recent messages from the chat. Unless you turn off
+      <strong>Use my Paths activity</strong> in Configure Arete, it also sends your name, username, path, gender, age,
+      join date, schedule, progress, PATH scores, recent completions and latest Brief and Debrief answers. It always
+      sends your plan, your device type and your language.</p>
+    <p>
+      If you turn on <strong>Remember things I share</strong>, Arete saves lasting facts you tell it and sends them with
+      each message, along with up to 14 days of earlier chats. You can review and delete these facts in Configure Arete
+      &rarr; Memory.
+    </p>
+    <p>
+      The request goes to our server, which checks that you are signed in and within your daily limit, then passes it
+      to Anthropic, which writes the reply. Our server does not keep your messages or Arete's replies. It logs technical
+      details only: which model answered, how many tokens were used, how long it took, and whether it worked. It also
+      counts your requests each day.
+    </p>
+    <p>
+      Your chat history and Arete's saved facts are stored on your device, under your account, not on our servers.
+      Anthropic processes the requests under its own terms. <mark>[TO CONFIRM: how long Anthropic keeps Arete
+      requests]</mark>
+    </p>
+    <p>Do not share sensitive information with Arete, such as financial details, ID numbers or medical records.</p>
+
+    <h3>Health and motion</h3>
+    <p>
+      During a tracked walk or run, Paths uses your device's motion sensors for steps and floors, and may read steps
+      and walking and running distance from Apple Health. With your permission it reads your latest body weight from
+      Apple Health to estimate calories. Your weight stays on your device; only the estimate is saved. On Apple Watch, a
+      tracked run is saved as a workout in Apple Health. We never use Health data for advertising.
+    </p>
+
+    <h3>Usage and diagnostics</h3>
+    <p>
+      The app records events about how it is used and how it is running: for example opening an offer, publishing a
+      completion, an error, or the app closing unexpectedly. Each event carries your user ID, a session ID, the app
+      version and the platform. These go to our own database. We use no third-party analytics, advertising or crash
+      reporting services. We use the events to fix problems and improve Paths.
+    </p>
+
+    <h2 id="permissions">What the app asks to use on your device</h2>
+    <ul>
+      <li><strong>Camera:</strong> to take proof photos and count exercises.</li>
+      <li><strong>Microphone:</strong> to record audio proof.</li>
+      <li><strong>Photos:</strong> to choose a reference image for drawing.</li>
+      <li>
+        <strong>Location:</strong> only during a walk or run you start, including with the screen off if you allow it.
+        Paths does not collect your location at other times.
+      </li>
+      <li><strong>Motion and Apple Health:</strong> as described above.</li>
+      <li><strong>Contacts:</strong> to pick friends to invite, as described above.</li>
+      <li>
+        <strong>Notifications and alarms:</strong> reminders and wake-up alarms are scheduled on your device. Paths does
+        not use push notifications.
+      </li>
+    </ul>
+    <p>Each is optional. You can turn it off at any time in your device's Settings; the methods that need it will stop working.</p>
+    <p>
+      Your Apple Watch and the Paths widgets exchange your schedule and proof with your iPhone directly, on your own
+      devices.
+    </p>
+
+    <h2 id="who">Who can see your information</h2>
+    <ul>
+      <li>
+        <strong>Your friends in Paths</strong> see your username and profile, your progress and badges, and the
+        completions you publish with their proof: photos, drawings, recordings and route maps.
+      </li>
+      <li>
+        <mark>[TO CONFIRM: any signed-in Paths account can read every profile and pattern record, not only
+        friends'. Uploaded files are no longer world-readable &mdash; they are private and served by a
+        signed link that expires &mdash; but an account that can read a record can open the file it points
+        to. Restrict records to friends before release, or say so here.]</mark>
+      </li>
+      <li><strong>We</strong> can access your data to run, secure and support Paths.</li>
+      <li>
+        <strong>Our service providers</strong> handle data for us and for no other purpose:
+        <ul>
+          <li>
+            Supabase stores the database and files, runs sign-in and our server functions, and sends account emails
+            such as password resets. <mark>[TO CONFIRM: email provider for account emails, if not Supabase's own]</mark>
+          </li>
+          <li>Anthropic writes Arete's replies.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Apple</strong> handles Sign in with Apple, App Store purchases, Apple Health and the maps in the app,
+        under Apple's own privacy policy.
+      </li>
+      <li>
+        <strong>Project Gutenberg</strong>, through Gutendex, supplies the public-domain books you read in Paths. Those
+        requests carry your book search, not your account.
+      </li>
+    </ul>
+    <p>We do not sell or rent your data, and we share it with no one else unless the law requires us to.</p>
+
+    <h2 id="where">Where your data is stored</h2>
+    <p>
+      Our database and files are hosted by Supabase in Ireland, in the European Union. Arete's requests are processed by
+      Anthropic in the United States. <mark>[TO CONFIRM: safeguards for transfers to the United States]</mark>
+    </p>
+    <p>Data travels encrypted between the app and our servers. Only you can change your own records.</p>
+
+    <h2 id="keep">How long we keep it</h2>
+    <p>We keep your account data for as long as you have an account. Separately:</p>
+    <ul>
+      <li>Usage and diagnostic events: <mark>[TO CONFIRM: retention period for usage and diagnostic events]</mark></li>
+      <li>Server logs, including Arete's technical logs: <mark>[TO CONFIRM: retention period for server logs]</mark></li>
+      <li>Backups: <mark>[TO CONFIRM: backup retention period]</mark></li>
+    </ul>
+
+    <h2 id="delete">Deleting your account</h2>
+    <p>
+      You can delete your account in the app: in Profile, open Settings (the gear) and choose Delete account. This deletes your
+      account, profile, patterns and completions, progress, reflections, friends list, notices sent to you, invite
+      records, challenges and feature suggestions.
+    </p>
+    <p>Some things remain:</p>
+    <ul>
+      <li>Usage and diagnostic events are kept, but no longer linked to your account.</li>
+      <li>Feedback and reactions you left on friends' completions stay in their records.</li>
+      <li>Notices your actions sent to friends stay with them, no longer linked to your account.</li>
+      <li>
+        The files you uploaded &mdash; proof photos, drawings and recordings &mdash; are deleted with the
+        account.
+      </li>
+      <li>
+        Arete's chat history and saved facts are on your device. Deleting the app removes them.
+      </li>
+    </ul>
+    <p>
+      Deleting your account does not cancel a subscription bought through Apple. To cancel, open the Settings app on
+      your iPhone, tap your name, then Subscriptions, and choose Paths. Before you delete your account you can also use
+      Manage or cancel subscription in the app's subscription screen.
+    </p>
+
+    <h2 id="rights">Your choices and rights</h2>
+    <ul>
+      <li>
+        You can see your profile details in the app's Settings, and download them there with Download data. That file
+        holds your basic profile, not your patterns or proof.
+      </li>
+      <li>You can turn device permissions and Arete's settings on and off at any time.</li>
+      <li>
+        You can ask us for a full copy of your data, to correct or delete it, or to stop or limit how we use it. Write
+        to support@particlesofmind.com.
+      </li>
+      <li>You can complain to your data protection authority.</li>
+    </ul>
+    <p>
+      Where the law asks for a legal basis: we use your data to provide Paths under our agreement with you; we use your
+      contacts, location, camera, microphone, Health data and Arete's memory only with your permission, which you can
+      withdraw; and we use diagnostics in our legitimate interest in keeping Paths working and secure.
+    </p>
+
+    <h2 id="children">Children</h2>
+    <p>
+      Paths is for people aged 16 and over, and the app checks age at sign-up. If you believe someone younger has an
+      account, write to us and we will delete it.
+    </p>
+
+    <h2 id="website">This website</h2>
+    <p>
+      particlesofmind.com has no accounts and runs no analytics or advertising scripts. Its host,
+      Squarespace, may keep standard server logs such as IP addresses.
+    </p>
+
+    <h2 id="changes">Changes to this policy</h2>
+    <p>
+      When we change this policy we update the date above. If a change is material, we will tell you in the app or by
+      email before it takes effect.
+    </p>
+
+    <h2 id="contact">Contact</h2>
+    <p>
+      <mark>[TO CONFIRM: legal entity name]</mark><br />
+      <mark>[TO CONFIRM: postal address]</mark><br />
+      support@particlesofmind.com
+    </p>
+    <p><mark>[TO CONFIRM: EU representative, if one is required]</mark></p>
+    <p>Our Terms of Use are at <a href="/terms">particlesofmind.com/terms</a>.</p>
+  </LegalPage>
+</Layout>

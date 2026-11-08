@@ -1,0 +1,1012 @@
+{
+  "stills": [
+    {
+      "id": "schedule",
+      "scenario": "core.schedule",
+      "settle": 3
+    },
+    {
+      "id": "feed",
+      "scenario": "core.feed",
+      "settle": 4
+    },
+    {
+      "id": "arete",
+      "scenario": "core.arete",
+      "settle": 3
+    },
+    {
+      "id": "progress",
+      "scenario": "core.progress.peek",
+      "settle": 10
+    },
+    {
+      "id": "progress-points",
+      "scenario": "core.progress.points",
+      "settle": 10
+    },
+    {
+      "id": "progress-path-score",
+      "scenario": "core.progress.path-score",
+      "settle": 10
+    },
+    {
+      "id": "progress-badges",
+      "scenario": "core.progress.badges",
+      "settle": 10
+    },
+    {
+      "id": "profile",
+      "scenario": "core.profile",
+      "settle": 3
+    },
+    {
+      "id": "method-draw",
+      "scenario": "method.draw-painting",
+      "settle": 3
+    },
+    {
+      "id": "method-read",
+      "scenario": "method.read-books",
+      "settle": 3
+    },
+    {
+      "id": "method-games",
+      "scenario": "method.play-games",
+      "settle": 3
+    },
+    {
+      "id": "method-notes",
+      "scenario": "method.take-notes",
+      "settle": 3
+    },
+    {
+      "id": "method-picture",
+      "scenario": "method.take-picture",
+      "settle": 3
+    },
+    {
+      "id": "method-audio",
+      "scenario": "method.register-audio",
+      "settle": 3
+    },
+    {
+      "id": "method-wake",
+      "scenario": "method.wake-up",
+      "settle": 3
+    },
+    {
+      "id": "method-motion",
+      "scenario": "method.track-motion",
+      "settle": 3
+    },
+    {
+      "id": "sign-in",
+      "scenario": "auth.sign-in",
+      "settle": 3
+    },
+    {
+      "id": "invite",
+      "scenario": "core.profile.invite",
+      "settle": 3
+    },
+    {
+      "id": "method-learn-arete",
+      "scenario": "method.learn-with-arete",
+      "settle": 3
+    },
+    {
+      "id": "email-sign-in",
+      "scenario": "auth.email-sign-in",
+      "settle": 3
+    },
+    {
+      "id": "reset-password",
+      "scenario": "auth.reset-password",
+      "settle": 3
+    },
+    {
+      "id": "onboarding-name",
+      "scenario": "signup.name",
+      "settle": 3
+    },
+    {
+      "id": "onboarding-age",
+      "scenario": "signup.age",
+      "settle": 3
+    },
+    {
+      "id": "onboarding-gender",
+      "scenario": "signup.gender",
+      "settle": 3
+    },
+    {
+      "id": "onboarding-archetype",
+      "scenario": "signup.archetype",
+      "settle": 3
+    },
+    {
+      "id": "onboarding-contacts",
+      "scenario": "signup.contacts",
+      "settle": 3
+    },
+    {
+      "id": "onboarding-review",
+      "scenario": "signup.review",
+      "settle": 3
+    },
+    {
+      "id": "avatar-explorer-m",
+      "scenario": "showcase.archetype-avatar",
+      "settle": 2,
+      "trim": true,
+      "arguments": [
+        "-VisualAuditAvatarArchetype",
+        "explorer"
+      ]
+    },
+    {
+      "id": "avatar-explorer-f",
+      "scenario": "showcase.archetype-avatar",
+      "settle": 2,
+      "trim": true,
+      "arguments": [
+        "-VisualAuditAvatarArchetype",
+        "explorer",
+        "-VisualAuditAvatarFemale"
+      ]
+    },
+    {
+      "id": "avatar-athlete-m",
+      "scenario": "showcase.archetype-avatar",
+      "settle": 2,
+      "trim": true,
+      "arguments": [
+        "-VisualAuditAvatarArchetype",
+        "athlete"
+      ]
+    },
+    {
+      "id": "avatar-athlete-f",
+      "scenario": "showcase.archetype-avatar",
+      "settle": 2,
+      "trim": true,
+      "arguments": [
+        "-VisualAuditAvatarArchetype",
+        "athlete",
+        "-VisualAuditAvatarFemale"
+      ]
+    },
+    {
+      "id": "avatar-artist-m",
+      "scenario": "showcase.archetype-avatar",
+      "settle": 2,
+      "trim": true,
+      "arguments": [
+        "-VisualAuditAvatarArchetype",
+        "artist"
+      ]
+    },
+    {
+      "id": "avatar-artist-f",
+      "scenario": "showcase.archetype-avatar",
+      "settle": 2,
+      "trim": true,
+      "arguments": [
+        "-VisualAuditAvatarArchetype",
+        "artist",
+        "-VisualAuditAvatarFemale"
+      ]
+    },
+    {
+      "id": "avatar-culinarian-m",
+      "scenario": "showcase.archetype-avatar",
+      "settle": 2,
+      "trim": true,
+      "arguments": [
+        "-VisualAuditAvatarArchetype",
+        "culinarian"
+      ]
+    },
+    {
+      "id": "avatar-culinarian-f",
+      "scenario": "showcase.archetype-avatar",
+      "settle": 2,
+      "trim": true,
+      "arguments": [
+        "-VisualAuditAvatarArchetype",
+        "culinarian",
+        "-VisualAuditAvatarFemale"
+      ]
+    },
+    {
+      "id": "avatar-mannequin-m",
+      "scenario": "showcase.archetype-avatar",
+      "settle": 2,
+      "trim": true,
+      "arguments": [
+        "-VisualAuditAvatarArchetype",
+        "mannequin"
+      ]
+    },
+    {
+      "id": "avatar-mannequin-f",
+      "scenario": "showcase.archetype-avatar",
+      "settle": 2,
+      "trim": true,
+      "arguments": [
+        "-VisualAuditAvatarArchetype",
+        "mannequin",
+        "-VisualAuditAvatarFemale"
+      ]
+    },
+    {
+      "id": "ipad-progress",
+      "device": "ipad",
+      "scenario": "core.progress.peek",
+      "settle": 10
+    },
+    {
+      "id": "watch-schedule",
+      "device": "watch",
+      "scenario": "watch.today",
+      "settle": 4
+    }
+  ],
+  "clips": [
+    {
+      "id": "progress-world",
+      "scenario": "core.progress.peek",
+      "settle": 10,
+      "steps": [
+        {
+          "action": "wait",
+          "seconds": 1
+        },
+        {
+          "action": "swipeUp",
+          "seconds": 1.5
+        },
+        {
+          "action": "swipeUp",
+          "seconds": 1.5
+        },
+        {
+          "action": "swipeDown",
+          "seconds": 1.5
+        }
+      ]
+    },
+    {
+      "id": "schedule-scroll",
+      "scenario": "core.schedule",
+      "settle": 3,
+      "steps": [
+        {
+          "action": "wait",
+          "seconds": 1
+        },
+        {
+          "action": "swipeUp",
+          "seconds": 1.2
+        },
+        {
+          "action": "swipeDown",
+          "seconds": 1.2
+        },
+        {
+          "action": "wait",
+          "seconds": 1
+        }
+      ]
+    },
+    {
+      "id": "schedule-days",
+      "scenario": "core.schedule",
+      "settle": 3,
+      "steps": [
+        {
+          "action": "wait",
+          "seconds": 1
+        },
+        {
+          "action": "swipeLeft",
+          "target": "Schedule date carousel",
+          "seconds": 1.2
+        },
+        {
+          "action": "swipeLeft",
+          "target": "Schedule date carousel",
+          "seconds": 1.2
+        },
+        {
+          "action": "swipeRight",
+          "target": "Schedule date carousel",
+          "seconds": 1.2
+        },
+        {
+          "action": "wait",
+          "seconds": 1
+        }
+      ]
+    },
+    {
+      "id": "schedule-add-pattern",
+      "scenario": "core.schedule",
+      "settle": 3,
+      "steps": [
+        {
+          "action": "wait",
+          "seconds": 1
+        },
+        {
+          "action": "tap",
+          "target": "Add a new pattern",
+          "seconds": 2
+        },
+        {
+          "action": "tap",
+          "target": "Go for a run",
+          "seconds": 1.2
+        },
+        {
+          "action": "tap",
+          "target": "Next",
+          "seconds": 2
+        },
+        {
+          "action": "tap",
+          "target": "Mo",
+          "seconds": 0.8
+        },
+        {
+          "action": "tap",
+          "target": "We",
+          "seconds": 0.8
+        },
+        {
+          "action": "tap",
+          "target": "Fr",
+          "seconds": 1.5
+        }
+      ]
+    },
+    {
+      "id": "progress-badge",
+      "scenario": "core.progress.peek",
+      "settle": 10,
+      "steps": [
+        {
+          "action": "wait",
+          "seconds": 1
+        },
+        {
+          "action": "tap",
+          "target": "levels-milestone-caption",
+          "seconds": 3
+        },
+        {
+          "action": "swipeDown",
+          "seconds": 1.5
+        }
+      ]
+    },
+    {
+      "id": "progress-sheet",
+      "scenario": "core.progress.points",
+      "settle": 10,
+      "steps": [
+        {
+          "action": "wait",
+          "seconds": 1.5
+        },
+        {
+          "action": "tap",
+          "target": "Score",
+          "seconds": 2
+        },
+        {
+          "action": "tap",
+          "target": "Badges",
+          "seconds": 2
+        },
+        {
+          "action": "tap",
+          "target": "Next badge category",
+          "seconds": 1.5
+        }
+      ]
+    },
+    {
+      "id": "feed-tabs",
+      "scenario": "core.feed",
+      "settle": 4,
+      "arguments": [
+        "-social.feed.showMockFriendsPosts",
+        "YES"
+      ],
+      "steps": [
+        {
+          "action": "wait",
+          "seconds": 1
+        },
+        {
+          "action": "swipeUp",
+          "seconds": 1.2
+        },
+        {
+          "action": "tap",
+          "target": "Ranking",
+          "seconds": 2
+        },
+        {
+          "action": "tap",
+          "target": "Challenges",
+          "seconds": 2
+        },
+        {
+          "action": "tap",
+          "target": "Friends",
+          "seconds": 1.5
+        }
+      ]
+    },
+    {
+      "id": "feed-ranking",
+      "scenario": "core.feed",
+      "settle": 4,
+      "steps": [
+        {"action": "wait", "seconds": 1},
+        {"action": "swipeUp", "seconds": 1.2},
+        {"action": "tap", "target": "Ranking", "seconds": 2}
+      ]
+    },
+    {
+      "id": "feed-groups",
+      "scenario": "core.feed",
+      "settle": 4,
+      "steps": [
+        {"action": "wait", "seconds": 1},
+        {"action": "swipeUp", "seconds": 1.2},
+        {"action": "tap", "target": "Groups", "seconds": 2}
+      ]
+    },
+    {
+      "id": "feed-challenges",
+      "scenario": "core.feed",
+      "settle": 4,
+      "steps": [
+        {"action": "wait", "seconds": 1},
+        {"action": "swipeUp", "seconds": 1.2},
+        {"action": "tap", "target": "Challenges", "seconds": 2}
+      ]
+    },
+    {
+      "id": "method-audio-run",
+      "scenario": "method.register-audio",
+      "settle": 3,
+      "arguments": [
+        "-VisualAuditSessionID",
+        "{session}"
+      ],
+      "steps": [
+        {
+          "action": "wait",
+          "seconds": 0.8
+        },
+        {
+          "action": "tap",
+          "at": [
+            0.5,
+            0.566
+          ],
+          "seconds": 5
+        },
+        {
+          "action": "tap",
+          "at": [
+            0.5,
+            0.566
+          ],
+          "seconds": 1.2
+        },
+        {
+          "action": "tap",
+          "target": "Play",
+          "seconds": 3
+        }
+      ]
+    },
+    {
+      "id": "method-notes-run",
+      "scenario": "method.take-notes",
+      "settle": 3,
+      "arguments": [
+        "-VisualAuditSessionID",
+        "{session}"
+      ],
+      "steps": [
+        {
+          "action": "wait",
+          "seconds": 0.8
+        },
+        {
+          "action": "tap",
+          "at": [
+            0.5,
+            0.3
+          ],
+          "seconds": 1
+        },
+        {
+          "action": "type",
+          "text": "Morning ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "walk ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "by ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "the ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "river. ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "The ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "light ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "came ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "in ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "low ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "over ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "the ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "water, ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "and ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "for ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "once ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "I ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "noticed ",
+          "seconds": 0.12
+        },
+        {
+          "action": "type",
+          "text": "it.",
+          "seconds": 0.12
+        },
+        {
+          "action": "wait",
+          "seconds": 0.8
+        },
+        {
+          "action": "tap",
+          "target": "Done",
+          "seconds": 1.5
+        }
+      ]
+    },
+    {
+      "id": "method-draw-run",
+      "scenario": "method.draw-painting",
+      "settle": 3,
+      "arguments": [
+        "-VisualAuditSessionID",
+        "{session}"
+      ],
+      "steps": [
+        {
+          "action": "wait",
+          "seconds": 0.6
+        },
+        {
+          "action": "tap",
+          "target": "Bold stroke width",
+          "seconds": 0.5
+        },
+        {
+          "action": "drag",
+          "at": [
+            0.85,
+            0.182
+          ],
+          "to": [
+            0.3,
+            0.182
+          ],
+          "seconds": 0.5
+        },
+        {
+          "action": "tap",
+          "target": "Ink Blue",
+          "seconds": 0.5
+        },
+        {
+          "action": "drag",
+          "at": [
+            0.302,
+            0.408
+          ],
+          "to": [
+            0.674,
+            0.408
+          ],
+          "seconds": 0.15
+        },
+        {
+          "action": "drag",
+          "at": [
+            0.302,
+            0.408
+          ],
+          "to": [
+            0.488,
+            0.429
+          ],
+          "seconds": 0.15
+        },
+        {
+          "action": "drag",
+          "at": [
+            0.488,
+            0.429
+          ],
+          "to": [
+            0.674,
+            0.408
+          ],
+          "seconds": 0.15
+        },
+        {
+          "action": "drag",
+          "at": [
+            0.302,
+            0.408
+          ],
+          "to": [
+            0.326,
+            0.665
+          ],
+          "seconds": 0.15
+        },
+        {
+          "action": "drag",
+          "at": [
+            0.326,
+            0.665
+          ],
+          "to": [
+            0.651,
+            0.665
+          ],
+          "seconds": 0.15
+        },
+        {
+          "action": "drag",
+          "at": [
+            0.651,
+            0.665
+          ],
+          "to": [
+            0.674,
+            0.408
+          ],
+          "seconds": 0.15
+        },
+        {
+          "action": "drag",
+          "at": [
+            0.67,
+            0.461
+          ],
+          "to": [
+            0.802,
+            0.472
+          ],
+          "seconds": 0.15
+        },
+        {
+          "action": "drag",
+          "at": [
+            0.802,
+            0.472
+          ],
+          "to": [
+            0.814,
+            0.579
+          ],
+          "seconds": 0.15
+        },
+        {
+          "action": "drag",
+          "at": [
+            0.814,
+            0.579
+          ],
+          "to": [
+            0.658,
+            0.601
+          ],
+          "seconds": 0.4
+        },
+        {
+          "action": "tap",
+          "target": "Ink Ochre",
+          "seconds": 0.4
+        },
+        {
+          "action": "drag",
+          "at": [
+            0.419,
+            0.376
+          ],
+          "to": [
+            0.395,
+            0.333
+          ],
+          "seconds": 0.1
+        },
+        {
+          "action": "drag",
+          "at": [
+            0.395,
+            0.333
+          ],
+          "to": [
+            0.43,
+            0.29
+          ],
+          "seconds": 0.15
+        },
+        {
+          "action": "drag",
+          "at": [
+            0.5,
+            0.376
+          ],
+          "to": [
+            0.477,
+            0.333
+          ],
+          "seconds": 0.1
+        },
+        {
+          "action": "drag",
+          "at": [
+            0.477,
+            0.333
+          ],
+          "to": [
+            0.512,
+            0.29
+          ],
+          "seconds": 0.15
+        },
+        {
+          "action": "drag",
+          "at": [
+            0.581,
+            0.376
+          ],
+          "to": [
+            0.558,
+            0.333
+          ],
+          "seconds": 0.1
+        },
+        {
+          "action": "drag",
+          "at": [
+            0.558,
+            0.333
+          ],
+          "to": [
+            0.593,
+            0.29
+          ],
+          "seconds": 1.5
+        }
+      ]
+    },
+    {
+      "id": "method-read-run",
+      "scenario": "method.read-books",
+      "settle": 3,
+      "arguments": [
+        "-VisualAuditSessionID",
+        "{session}"
+      ],
+      "steps": [
+        {
+          "action": "wait",
+          "seconds": 0.8
+        },
+        {
+          "action": "tap",
+          "target": "Open library",
+          "seconds": 2.5
+        },
+        {
+          "action": "tap",
+          "target": "Read",
+          "seconds": 3.5
+        },
+        {
+          "action": "tap",
+          "target": "Chapters",
+          "seconds": 1.5
+        },
+        {
+          "action": "tap",
+          "at": [
+            0.3,
+            0.286
+          ],
+          "seconds": 2.5
+        },
+        {
+          "action": "swipeUp",
+          "seconds": 1.5
+        },
+        {
+          "action": "swipeUp",
+          "seconds": 1.5
+        }
+      ]
+    },
+    {
+      "id": "method-games-run",
+      "scenario": "method.play-games",
+      "settle": 3,
+      "arguments": [
+        "-VisualAuditSessionID",
+        "{session}"
+      ],
+      "steps": [
+        {
+          "action": "wait",
+          "seconds": 0.8
+        },
+        {
+          "action": "tap",
+          "target": "Chess, Play against AI",
+          "seconds": 1.5
+        },
+        {
+          "action": "tap",
+          "at": [
+            0.5465,
+            0.4864
+          ],
+          "seconds": 0.6
+        },
+        {
+          "action": "tap",
+          "at": [
+            0.5465,
+            0.4005
+          ],
+          "seconds": 2.2
+        },
+        {
+          "action": "tap",
+          "at": [
+            0.7326,
+            0.5293
+          ],
+          "seconds": 0.6
+        },
+        {
+          "action": "tap",
+          "at": [
+            0.6395,
+            0.4435
+          ],
+          "seconds": 2.2
+        },
+        {
+          "action": "tap",
+          "at": [
+            0.6395,
+            0.5293
+          ],
+          "seconds": 0.6
+        },
+        {
+          "action": "tap",
+          "at": [
+            0.3605,
+            0.4005
+          ],
+          "seconds": 2.5
+        }
+      ]
+    },
+    {
+      "id": "method-wake-run",
+      "scenario": "method.wake-up",
+      "settle": 3,
+      "arguments": [
+        "-VisualAuditSessionID",
+        "{session}"
+      ],
+      "steps": [
+        {
+          "action": "wait",
+          "seconds": 1.2
+        },
+        {
+          "action": "tap",
+          "target": "Beep",
+          "seconds": 2.5
+        },
+        {
+          "action": "tap",
+          "at": [
+            0.5605,
+            0.3452
+          ],
+          "seconds": 2.5
+        }
+      ]
+    }
+  ]
+}

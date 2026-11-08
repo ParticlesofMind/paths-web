@@ -1,0 +1,830 @@
+{
+  "stills": {
+    "method-notes": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/method-notes-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/method-notes-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-04T22:56:41.850Z",
+      "appCommit": "1c7a0299"
+    },
+    "method-games": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/method-games-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/method-games-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-04T22:56:41.850Z",
+      "appCommit": "1c7a0299"
+    },
+    "method-read": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/method-read-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/method-read-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-04T22:56:41.850Z",
+      "appCommit": "1c7a0299"
+    },
+    "method-draw": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/method-draw-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/method-draw-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-04T22:56:41.850Z",
+      "appCommit": "1c7a0299"
+    },
+    "profile": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/profile-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/profile-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-04T22:56:41.850Z",
+      "appCommit": "1c7a0299"
+    },
+    "progress-badges": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/progress-badges-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/progress-badges-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-04T22:56:41.850Z",
+      "appCommit": "1c7a0299"
+    },
+    "progress-path-score": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/progress-path-score-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/progress-path-score-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-04T22:56:41.850Z",
+      "appCommit": "1c7a0299"
+    },
+    "progress-points": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/progress-points-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/progress-points-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-04T22:56:41.850Z",
+      "appCommit": "1c7a0299"
+    },
+    "progress": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/progress-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/progress-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-04T22:56:41.850Z",
+      "appCommit": "1c7a0299"
+    },
+    "arete": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/arete-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/arete-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-04T22:56:41.850Z",
+      "appCommit": "1c7a0299"
+    },
+    "feed": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/feed-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/feed-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-04T22:56:41.850Z",
+      "appCommit": "1c7a0299"
+    },
+    "schedule": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/schedule-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/schedule-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-04T22:56:41.850Z",
+      "appCommit": "1c7a0299"
+    },
+    "avatar-artist-f": {
+      "device": "iphone",
+      "width": 966,
+      "height": 966,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/avatar-artist-f-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/avatar-artist-f-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-05T01:24:45.356Z",
+      "appCommit": "1c7a0299"
+    },
+    "avatar-artist-m": {
+      "device": "iphone",
+      "width": 966,
+      "height": 966,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/avatar-artist-m-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/avatar-artist-m-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-05T01:24:45.356Z",
+      "appCommit": "1c7a0299"
+    },
+    "avatar-athlete-f": {
+      "device": "iphone",
+      "width": 966,
+      "height": 966,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/avatar-athlete-f-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/avatar-athlete-f-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-05T01:24:45.356Z",
+      "appCommit": "1c7a0299"
+    },
+    "avatar-athlete-m": {
+      "device": "iphone",
+      "width": 966,
+      "height": 966,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/avatar-athlete-m-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/avatar-athlete-m-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-05T01:24:45.356Z",
+      "appCommit": "1c7a0299"
+    },
+    "avatar-culinarian-f": {
+      "device": "iphone",
+      "width": 966,
+      "height": 966,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/avatar-culinarian-f-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/avatar-culinarian-f-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-05T01:24:45.356Z",
+      "appCommit": "1c7a0299"
+    },
+    "avatar-culinarian-m": {
+      "device": "iphone",
+      "width": 966,
+      "height": 966,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/avatar-culinarian-m-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/avatar-culinarian-m-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-05T01:24:45.356Z",
+      "appCommit": "1c7a0299"
+    },
+    "avatar-explorer-f": {
+      "device": "iphone",
+      "width": 966,
+      "height": 966,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/avatar-explorer-f-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/avatar-explorer-f-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-05T01:24:45.356Z",
+      "appCommit": "1c7a0299"
+    },
+    "avatar-explorer-m": {
+      "device": "iphone",
+      "width": 966,
+      "height": 966,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/avatar-explorer-m-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/avatar-explorer-m-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-05T01:24:45.356Z",
+      "appCommit": "1c7a0299"
+    },
+    "avatar-mannequin-f": {
+      "device": "iphone",
+      "width": 966,
+      "height": 966,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/avatar-mannequin-f-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/avatar-mannequin-f-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-05T01:24:45.356Z",
+      "appCommit": "1c7a0299"
+    },
+    "avatar-mannequin-m": {
+      "device": "iphone",
+      "width": 966,
+      "height": 966,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/avatar-mannequin-m-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/avatar-mannequin-m-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-05T01:24:45.356Z",
+      "appCommit": "1c7a0299"
+    },
+    "ipad-progress": {
+      "device": "ipad",
+      "width": 2064,
+      "height": 2752,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/ipad-progress-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/ipad-progress-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-05T16:57:29.108Z",
+      "appCommit": "1c7a0299"
+    },
+    "watch-schedule": {
+      "device": "watch",
+      "width": 416,
+      "height": 496,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/watch-schedule-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/watch-schedule-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-05T16:50:38.550Z",
+      "appCommit": "1c7a0299"
+    },
+    "method-audio": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/method-audio-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/method-audio-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-05T19:22:22.444Z",
+      "appCommit": "1c7a0299"
+    },
+    "method-picture": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/method-picture-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/method-picture-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-05T19:25:22.821Z",
+      "appCommit": "1c7a0299"
+    },
+    "method-pushups": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/method-pushups-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/method-pushups-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-05T19:22:22.444Z",
+      "appCommit": "1c7a0299"
+    },
+    "method-motion": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/method-motion-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/method-motion-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-05T19:54:00.598Z",
+      "appCommit": "1c7a0299"
+    },
+    "method-wake": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/method-wake-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/method-wake-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-06T01:09:49.972Z",
+      "appCommit": "1c7a0299"
+    },
+    "invite": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/invite-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/invite-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-07T01:35:59.553Z",
+      "appCommit": "1c7a0299"
+    },
+    "method-learn-arete": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/method-learn-arete-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/method-learn-arete-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-07T01:35:59.553Z",
+      "appCommit": "1c7a0299"
+    },
+    "sign-in": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/sign-in-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/sign-in-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-07T01:35:59.553Z",
+      "appCommit": "1c7a0299"
+    },
+    "email-sign-in": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/email-sign-in-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/email-sign-in-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-07T02:12:23.139Z",
+      "appCommit": "1c7a0299"
+    },
+    "onboarding-age": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/onboarding-age-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/onboarding-age-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-07T02:12:23.139Z",
+      "appCommit": "1c7a0299"
+    },
+    "onboarding-archetype": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/onboarding-archetype-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/onboarding-archetype-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-07T02:12:23.139Z",
+      "appCommit": "1c7a0299"
+    },
+    "onboarding-contacts": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/onboarding-contacts-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/onboarding-contacts-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-07T02:12:23.139Z",
+      "appCommit": "1c7a0299"
+    },
+    "onboarding-gender": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/onboarding-gender-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/onboarding-gender-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-07T02:12:23.139Z",
+      "appCommit": "1c7a0299"
+    },
+    "onboarding-name": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/onboarding-name-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/onboarding-name-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-07T02:12:23.139Z",
+      "appCommit": "1c7a0299"
+    },
+    "onboarding-review": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/onboarding-review-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/onboarding-review-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-07T02:12:23.139Z",
+      "appCommit": "1c7a0299"
+    },
+    "reset-password": {
+      "device": "iphone",
+      "width": 1290,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 480,
+          "file": "/media/stills/reset-password-480.webp"
+        },
+        {
+          "width": 960,
+          "file": "/media/stills/reset-password-960.webp"
+        }
+      ],
+      "capturedAt": "2026-10-07T02:12:23.139Z",
+      "appCommit": "1c7a0299"
+    }
+  },
+  "clips": {
+    "progress-world": {
+      "file": "/media/clips/progress-world.mp4",
+      "poster": "/media/clips/progress-world.jpg",
+      "width": 720,
+      "height": 1560,
+      "duration": 8.4,
+      "capturedAt": "2026-10-04T22:56:41.850Z",
+      "appCommit": "1c7a0299"
+    },
+    "schedule-scroll": {
+      "file": "/media/clips/schedule-scroll.mp4",
+      "poster": "/media/clips/schedule-scroll.jpg",
+      "width": 720,
+      "height": 1560,
+      "duration": 5.383333,
+      "capturedAt": "2026-10-05T01:08:41.318Z",
+      "appCommit": "1c7a0299"
+    },
+    "schedule-days": {
+      "file": "/media/clips/schedule-days.mp4",
+      "poster": "/media/clips/schedule-days.jpg",
+      "width": 720,
+      "height": 1560,
+      "duration": 10.616016,
+      "capturedAt": "2026-10-05T01:08:41.318Z",
+      "appCommit": "1c7a0299"
+    },
+    "schedule-add-pattern": {
+      "file": "/media/clips/schedule-add-pattern.mp4",
+      "poster": "/media/clips/schedule-add-pattern.jpg",
+      "width": 720,
+      "height": 1560,
+      "duration": 20.1,
+      "capturedAt": "2026-10-05T01:05:03.388Z",
+      "appCommit": "1c7a0299"
+    },
+    "progress-sheet": {
+      "file": "/media/clips/progress-sheet.mp4",
+      "poster": "/media/clips/progress-sheet.jpg",
+      "width": 720,
+      "height": 1560,
+      "duration": 13.8,
+      "capturedAt": "2026-10-05T01:05:03.388Z",
+      "appCommit": "1c7a0299"
+    },
+    "feed-tabs": {
+      "file": "/media/clips/feed-tabs.mp4",
+      "poster": "/media/clips/feed-tabs.jpg",
+      "width": 720,
+      "height": 1560,
+      "duration": 15.266667,
+      "capturedAt": "2026-10-05T01:05:03.388Z",
+      "appCommit": "1c7a0299"
+    },
+    "progress-badge": {
+      "file": "/media/clips/progress-badge.mp4",
+      "poster": "/media/clips/progress-badge.jpg",
+      "width": 720,
+      "height": 1560,
+      "duration": 9.016667,
+      "capturedAt": "2026-10-05T01:06:33.200Z",
+      "appCommit": "1c7a0299"
+    },
+    "method-audio-run": {
+      "file": "/media/clips/method-audio-run.mp4",
+      "poster": "/media/clips/method-audio-run.jpg",
+      "width": 720,
+      "height": 1560,
+      "duration": 12.083333,
+      "capturedAt": "2026-10-06T00:59:47.637Z",
+      "appCommit": "1c7a0299"
+    },
+    "method-notes-run": {
+      "file": "/media/clips/method-notes-run.mp4",
+      "poster": "/media/clips/method-notes-run.jpg",
+      "width": 720,
+      "height": 1560,
+      "duration": 19,
+      "capturedAt": "2026-10-06T00:59:47.637Z",
+      "appCommit": "1c7a0299"
+    },
+    "method-draw-run": {
+      "file": "/media/clips/method-draw-run.mp4",
+      "poster": "/media/clips/method-draw-run.jpg",
+      "width": 720,
+      "height": 1560,
+      "duration": 26.333333,
+      "capturedAt": "2026-10-06T00:59:47.637Z",
+      "appCommit": "1c7a0299"
+    },
+    "method-read-run": {
+      "file": "/media/clips/method-read-run.mp4",
+      "poster": "/media/clips/method-read-run.jpg",
+      "width": 720,
+      "height": 1560,
+      "duration": 37.683333,
+      "capturedAt": "2026-10-06T01:03:31.296Z",
+      "appCommit": "1c7a0299"
+    },
+    "method-games-run": {
+      "file": "/media/clips/method-games-run.mp4",
+      "poster": "/media/clips/method-games-run.jpg",
+      "width": 720,
+      "height": 1560,
+      "duration": 14.883333,
+      "capturedAt": "2026-10-06T00:59:47.637Z",
+      "appCommit": "1c7a0299"
+    },
+    "method-wake-run": {
+      "file": "/media/clips/method-wake-run.mp4",
+      "poster": "/media/clips/method-wake-run.jpg",
+      "width": 720,
+      "height": 1560,
+      "duration": 9.816667,
+      "capturedAt": "2026-10-06T01:09:49.972Z",
+      "appCommit": "1c7a0299"
+    },
+    "feed-ranking": {
+      "file": "/media/clips/feed-ranking.mp4",
+      "poster": "/media/clips/feed-ranking.jpg",
+      "width": 720,
+      "height": 1560,
+      "duration": 5.466667,
+      "capturedAt": "2026-10-07T01:35:59.553Z",
+      "appCommit": "1c7a0299"
+    },
+    "feed-groups": {
+      "file": "/media/clips/feed-groups.mp4",
+      "poster": "/media/clips/feed-groups.jpg",
+      "width": 720,
+      "height": 1560,
+      "duration": 10.15,
+      "capturedAt": "2026-10-07T01:35:59.553Z",
+      "appCommit": "1c7a0299"
+    },
+    "feed-challenges": {
+      "file": "/media/clips/feed-challenges.mp4",
+      "poster": "/media/clips/feed-challenges.jpg",
+      "width": 720,
+      "height": 1560,
+      "duration": 6.066667,
+      "capturedAt": "2026-10-07T01:35:59.553Z",
+      "appCommit": "1c7a0299"
+    }
+  }
+}

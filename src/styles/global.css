@@ -1,5 +1,73 @@
 @import "tailwindcss";
+@import "./app-tokens.css";
+@import "./fonts.css";
+@import "./site.css";
+@import "./device.css";
 
-@theme {
-  --font-family-sans: "Inter", system-ui, sans-serif;
+@theme inline {
+  --font-sans: var(--site-font);
+
+  --color-ink: var(--site-ink);
+  --color-ink-60: var(--site-ink-60);
+  --color-ink-40: var(--site-ink-40);
+  --color-paper: var(--site-paper);
+  --color-surface: var(--site-surface);
+  --color-mist: var(--site-mist);
+  --color-sage: var(--site-sage);
+  --color-clay: var(--site-clay);
+  --color-ochre: var(--site-ochre);
+  --color-fjord: var(--site-fjord);
+  --color-art-ground: var(--site-art-ground);
+  --color-art-ink: var(--site-art-ink);
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Section links land below the sticky header (SiteHeader.tsx), which takes
+     two rows on phones and one from md up. */
+  scroll-padding-top: 7rem;
+}
+
+@media (width >= 48rem) {
+  html {
+    scroll-padding-top: 5rem;
+  }
+}
+
+body {
+  font-family: var(--site-font);
+  background: var(--site-paper);
+  color: var(--site-ink);
+}
+
+/* An icon from the app's set (AppIcon.tsx), masked so it takes the text colour. */
+.app-icon {
+  display: inline-block;
+  background: currentColor;
+  mask: var(--app-icon) center / contain no-repeat;
+}
+
+/* A plan's card: the card ground inside, a metal gradient round the
+   edge. The disc beside the plan's name takes the same gradient. */
+.plan-card {
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--site-surface), var(--site-surface)) padding-box,
+    var(--plan-metal) border-box;
+}
+
+.plan-card[data-plan="free"] {
+  --plan-metal: linear-gradient(135deg, var(--site-bronze-deep), var(--site-bronze-light) 35%, var(--site-bronze) 60%, var(--site-bronze-light) 80%, var(--site-bronze-deep));
+}
+
+.plan-card[data-plan="plus"] {
+  --plan-metal: linear-gradient(135deg, var(--site-silver-deep), var(--site-silver-light) 35%, var(--site-silver) 60%, var(--site-silver-light) 80%, var(--site-silver-deep));
+}
+
+.plan-card[data-plan="max"] {
+  --plan-metal: linear-gradient(135deg, var(--site-gold-deep), var(--site-gold-light) 35%, var(--site-gold) 60%, var(--site-gold-light) 80%, var(--site-gold-deep));
+}
+
+.plan-metal {
+  background: var(--plan-metal);
 }

@@ -1,0 +1,1259 @@
+{
+  "_generated": "npm run sync, from the app's pattern templates, asset catalog and artwork. Do not edit here.",
+  "patterns": [
+    {
+      "name": "Eat a healthy breakfast",
+      "icon": "sunrise",
+      "method": "take-picture",
+      "archetype": "shared"
+    },
+    {
+      "name": "Eat a healthy lunch",
+      "icon": "sun",
+      "method": "take-picture",
+      "archetype": "shared"
+    },
+    {
+      "name": "Eat a healthy dinner",
+      "icon": "moon",
+      "method": "take-picture",
+      "archetype": "shared"
+    },
+    {
+      "name": "Wake up on time",
+      "icon": "bed",
+      "method": "wake-up",
+      "archetype": "shared"
+    },
+    {
+      "name": "Take a walk",
+      "icon": "footprints",
+      "method": "track-motion",
+      "archetype": "shared"
+    },
+    {
+      "name": "Make your bed",
+      "icon": "bed-single",
+      "method": "take-picture",
+      "archetype": "shared"
+    },
+    {
+      "name": "Clean your living space",
+      "icon": "sparkles",
+      "method": "take-picture",
+      "archetype": "shared"
+    },
+    {
+      "name": "Shop for groceries",
+      "icon": "shopping-cart",
+      "method": "take-picture",
+      "archetype": "shared"
+    },
+    {
+      "name": "Read a book",
+      "icon": "book",
+      "method": "read-books",
+      "archetype": "shared"
+    },
+    {
+      "name": "Solve a puzzle",
+      "icon": "grid-3x3",
+      "method": "play-games",
+      "archetype": "shared"
+    },
+    {
+      "name": "Practice an instrument",
+      "icon": "music",
+      "method": "register-audio",
+      "archetype": "artist"
+    },
+    {
+      "name": "Sing a song",
+      "icon": "mic",
+      "method": "register-audio",
+      "archetype": "artist"
+    },
+    {
+      "name": "Take photos",
+      "icon": "camera",
+      "method": "take-picture",
+      "archetype": "artist"
+    },
+    {
+      "name": "Create an origami",
+      "icon": "triangle",
+      "method": "take-picture",
+      "archetype": "artist"
+    },
+    {
+      "name": "Sew clothing",
+      "icon": "scissors",
+      "method": "take-picture",
+      "archetype": "artist"
+    },
+    {
+      "name": "Sculpt with clay",
+      "icon": "circle-dot",
+      "method": "take-picture",
+      "archetype": "artist"
+    },
+    {
+      "name": "Write a poem",
+      "icon": "pen-line",
+      "method": "take-notes",
+      "archetype": "artist"
+    },
+    {
+      "name": "Keep a diary",
+      "icon": "book-open",
+      "method": "take-notes",
+      "archetype": "artist"
+    },
+    {
+      "name": "Write a story",
+      "icon": "file-text",
+      "method": "take-notes",
+      "archetype": "artist"
+    },
+    {
+      "name": "Draw a painting",
+      "icon": "palette",
+      "method": "draw-painting",
+      "archetype": "artist"
+    },
+    {
+      "name": "Go for a run",
+      "icon": "flame",
+      "method": "track-motion",
+      "archetype": "athlete"
+    },
+    {
+      "name": "Go cycling",
+      "icon": "bike",
+      "method": "track-motion",
+      "archetype": "athlete"
+    },
+    {
+      "name": "Climb the stairs",
+      "icon": "chart-no-axes-column-increasing",
+      "method": "track-motion",
+      "archetype": "athlete"
+    },
+    {
+      "name": "Go for a hike",
+      "icon": "mountain",
+      "method": "track-motion",
+      "archetype": "athlete"
+    },
+    {
+      "name": "Play a sport",
+      "icon": "trophy",
+      "method": "track-motion",
+      "archetype": "athlete"
+    },
+    {
+      "name": "Go to the gym",
+      "icon": "dumbbell",
+      "method": "take-picture",
+      "archetype": "athlete"
+    },
+    {
+      "name": "Bake a loaf of bread",
+      "icon": "wheat",
+      "method": "take-picture",
+      "archetype": "culinarian"
+    },
+    {
+      "name": "Brew your own tea",
+      "icon": "coffee",
+      "method": "take-picture",
+      "archetype": "culinarian"
+    },
+    {
+      "name": "Make homemade jams",
+      "icon": "container",
+      "method": "take-picture",
+      "archetype": "culinarian"
+    },
+    {
+      "name": "Make a pizza",
+      "icon": "pizza",
+      "method": "take-picture",
+      "archetype": "culinarian"
+    },
+    {
+      "name": "Prepare a dessert",
+      "icon": "cake-slice",
+      "method": "take-picture",
+      "archetype": "culinarian"
+    },
+    {
+      "name": "Visit a new place",
+      "icon": "map-pin",
+      "method": "take-picture",
+      "archetype": "explorer"
+    },
+    {
+      "name": "Try a new cuisine",
+      "icon": "utensils-crossed",
+      "method": "take-picture",
+      "archetype": "explorer"
+    },
+    {
+      "name": "Visit a museum",
+      "icon": "building",
+      "method": "take-picture",
+      "archetype": "explorer"
+    },
+    {
+      "name": "Go geocaching",
+      "icon": "map-pin",
+      "method": "track-motion",
+      "archetype": "explorer"
+    },
+    {
+      "name": "Apply makeup",
+      "icon": "paintbrush",
+      "method": "take-picture",
+      "archetype": "mannequin"
+    },
+    {
+      "name": "Wear a monochrome outfit",
+      "icon": "shirt",
+      "method": "take-picture",
+      "archetype": "mannequin"
+    },
+    {
+      "name": "Style your hair",
+      "icon": "sparkles",
+      "method": "take-picture",
+      "archetype": "mannequin"
+    },
+    {
+      "name": "Apply nail polish",
+      "icon": "pipette",
+      "method": "take-picture",
+      "archetype": "mannequin"
+    },
+    {
+      "name": "Apply a face mask",
+      "icon": "circle-user",
+      "method": "take-picture",
+      "archetype": "mannequin"
+    },
+    {
+      "name": "Organize your wardrobe",
+      "icon": "box",
+      "method": "take-picture",
+      "archetype": "mannequin"
+    },
+    {
+      "name": "Create a mood board",
+      "icon": "layout-grid",
+      "method": "take-notes",
+      "archetype": "mannequin"
+    }
+  ],
+  "backgrounds": [
+    {
+      "id": "animated-explorer_sailor",
+      "plan": "free"
+    },
+    {
+      "id": "animated-exporer_sailor",
+      "plan": "plus"
+    },
+    {
+      "id": "animated-fishtank",
+      "plan": "plus"
+    },
+    {
+      "id": "animated-fishtank-smil",
+      "plan": "max"
+    },
+    {
+      "id": "artist-arches",
+      "plan": "max"
+    },
+    {
+      "id": "artist-brush-jars",
+      "plan": "plus"
+    },
+    {
+      "id": "artist-busts",
+      "plan": "max"
+    },
+    {
+      "id": "artist-canvases",
+      "plan": "free"
+    },
+    {
+      "id": "artist-cello",
+      "plan": "max"
+    },
+    {
+      "id": "artist-chisels",
+      "plan": "plus"
+    },
+    {
+      "id": "artist-column-bases",
+      "plan": "max"
+    },
+    {
+      "id": "artist-curtain-edges",
+      "plan": "max"
+    },
+    {
+      "id": "artist-drafting-grid",
+      "plan": "max"
+    },
+    {
+      "id": "artist-drop-cloth",
+      "plan": "plus"
+    },
+    {
+      "id": "artist-easels",
+      "plan": "plus"
+    },
+    {
+      "id": "artist-hung-frame",
+      "plan": "plus"
+    },
+    {
+      "id": "artist-lighting-bar",
+      "plan": "max"
+    },
+    {
+      "id": "artist-music-stands",
+      "plan": "plus"
+    },
+    {
+      "id": "artist-one-stroke",
+      "plan": "free"
+    },
+    {
+      "id": "artist-paint-pool",
+      "plan": "free"
+    },
+    {
+      "id": "artist-paint-tubes",
+      "plan": "plus"
+    },
+    {
+      "id": "artist-palette",
+      "plan": "plus"
+    },
+    {
+      "id": "artist-pencil-lines",
+      "plan": "free"
+    },
+    {
+      "id": "artist-piano-keys",
+      "plan": "max"
+    },
+    {
+      "id": "artist-plinths",
+      "plan": "plus"
+    },
+    {
+      "id": "artist-scaffold",
+      "plan": "max"
+    },
+    {
+      "id": "artist-staff-lines",
+      "plan": "free"
+    },
+    {
+      "id": "artist-studio-window",
+      "plan": "max"
+    },
+    {
+      "id": "artist-two-strokes",
+      "plan": "free"
+    },
+    {
+      "id": "artist-wash",
+      "plan": "free"
+    },
+    {
+      "id": "artist-water-jars",
+      "plan": "plus"
+    },
+    {
+      "id": "athlete-bicycles",
+      "plan": "max"
+    },
+    {
+      "id": "athlete-bleachers",
+      "plan": "plus"
+    },
+    {
+      "id": "athlete-bottles",
+      "plan": "free"
+    },
+    {
+      "id": "athlete-chalk",
+      "plan": "free"
+    },
+    {
+      "id": "athlete-discus-circle",
+      "plan": "max"
+    },
+    {
+      "id": "athlete-dumbbells",
+      "plan": "plus"
+    },
+    {
+      "id": "athlete-finish-tape",
+      "plan": "plus"
+    },
+    {
+      "id": "athlete-floodlights",
+      "plan": "free"
+    },
+    {
+      "id": "athlete-heart-trace",
+      "plan": "free"
+    },
+    {
+      "id": "athlete-high-jump",
+      "plan": "max"
+    },
+    {
+      "id": "athlete-hurdles",
+      "plan": "plus"
+    },
+    {
+      "id": "athlete-javelins",
+      "plan": "max"
+    },
+    {
+      "id": "athlete-kettlebells",
+      "plan": "plus"
+    },
+    {
+      "id": "athlete-lane-ends",
+      "plan": "max"
+    },
+    {
+      "id": "athlete-lane-ropes",
+      "plan": "max"
+    },
+    {
+      "id": "athlete-lanes",
+      "plan": "free"
+    },
+    {
+      "id": "athlete-medicine-balls",
+      "plan": "plus"
+    },
+    {
+      "id": "athlete-oars",
+      "plan": "max"
+    },
+    {
+      "id": "athlete-pace-line",
+      "plan": "free"
+    },
+    {
+      "id": "athlete-pool-edge",
+      "plan": "max"
+    },
+    {
+      "id": "athlete-rowing-shell",
+      "plan": "max"
+    },
+    {
+      "id": "athlete-scoreboard",
+      "plan": "plus"
+    },
+    {
+      "id": "athlete-shoes",
+      "plan": "plus"
+    },
+    {
+      "id": "athlete-sprint-arc",
+      "plan": "free"
+    },
+    {
+      "id": "athlete-stadium-rim",
+      "plan": "max"
+    },
+    {
+      "id": "athlete-starting-blocks",
+      "plan": "plus"
+    },
+    {
+      "id": "athlete-stopwatch-arc",
+      "plan": "plus"
+    },
+    {
+      "id": "bauhaus-archive",
+      "plan": "free"
+    },
+    {
+      "id": "bauhaus-repeating_pattern",
+      "plan": "plus"
+    },
+    {
+      "id": "culinarian-awning",
+      "plan": "max"
+    },
+    {
+      "id": "culinarian-board",
+      "plan": "free"
+    },
+    {
+      "id": "culinarian-bottles",
+      "plan": "max"
+    },
+    {
+      "id": "culinarian-candles",
+      "plan": "plus"
+    },
+    {
+      "id": "culinarian-copper-pans",
+      "plan": "max"
+    },
+    {
+      "id": "culinarian-crates",
+      "plan": "plus"
+    },
+    {
+      "id": "culinarian-flour-sacks",
+      "plan": "max"
+    },
+    {
+      "id": "culinarian-furrows",
+      "plan": "plus"
+    },
+    {
+      "id": "culinarian-glasses",
+      "plan": "max"
+    },
+    {
+      "id": "culinarian-herb-pots",
+      "plan": "free"
+    },
+    {
+      "id": "culinarian-kettle",
+      "plan": "max"
+    },
+    {
+      "id": "culinarian-knives",
+      "plan": "max"
+    },
+    {
+      "id": "culinarian-loaves",
+      "plan": "free"
+    },
+    {
+      "id": "culinarian-long-table",
+      "plan": "max"
+    },
+    {
+      "id": "culinarian-mixing-bowls",
+      "plan": "plus"
+    },
+    {
+      "id": "culinarian-olive-trees",
+      "plan": "plus"
+    },
+    {
+      "id": "culinarian-orchard",
+      "plan": "free"
+    },
+    {
+      "id": "culinarian-place-setting",
+      "plan": "max"
+    },
+    {
+      "id": "culinarian-range",
+      "plan": "plus"
+    },
+    {
+      "id": "culinarian-rolling-pin",
+      "plan": "plus"
+    },
+    {
+      "id": "culinarian-scales",
+      "plan": "plus"
+    },
+    {
+      "id": "culinarian-shelf",
+      "plan": "free"
+    },
+    {
+      "id": "culinarian-spoon-crock",
+      "plan": "plus"
+    },
+    {
+      "id": "culinarian-tiles",
+      "plan": "free"
+    },
+    {
+      "id": "culinarian-vine-row",
+      "plan": "plus"
+    },
+    {
+      "id": "culinarian-wheat",
+      "plan": "free"
+    },
+    {
+      "id": "culinarian-windmill",
+      "plan": "max"
+    },
+    {
+      "id": "explorer-birds",
+      "plan": "free"
+    },
+    {
+      "id": "explorer-cable-car",
+      "plan": "max"
+    },
+    {
+      "id": "explorer-cairns",
+      "plan": "plus"
+    },
+    {
+      "id": "explorer-cliff",
+      "plan": "max"
+    },
+    {
+      "id": "explorer-coastline",
+      "plan": "plus"
+    },
+    {
+      "id": "explorer-contours",
+      "plan": "free"
+    },
+    {
+      "id": "explorer-dunes",
+      "plan": "plus"
+    },
+    {
+      "id": "explorer-fence-posts",
+      "plan": "plus"
+    },
+    {
+      "id": "explorer-glacier",
+      "plan": "max"
+    },
+    {
+      "id": "explorer-graticule",
+      "plan": "max"
+    },
+    {
+      "id": "explorer-horizon-rule",
+      "plan": "free"
+    },
+    {
+      "id": "explorer-lake",
+      "plan": "plus"
+    },
+    {
+      "id": "explorer-mesas",
+      "plan": "max"
+    },
+    {
+      "id": "explorer-moorings",
+      "plan": "max"
+    },
+    {
+      "id": "explorer-ridges",
+      "plan": "free"
+    },
+    {
+      "id": "explorer-river-bend",
+      "plan": "plus"
+    },
+    {
+      "id": "explorer-sand-ripples",
+      "plan": "free"
+    },
+    {
+      "id": "explorer-strata",
+      "plan": "plus"
+    },
+    {
+      "id": "explorer-summit-markers",
+      "plan": "max"
+    },
+    {
+      "id": "explorer-switchback",
+      "plan": "plus"
+    },
+    {
+      "id": "explorer-telegraph-poles",
+      "plan": "max"
+    },
+    {
+      "id": "explorer-tents",
+      "plan": "plus"
+    },
+    {
+      "id": "explorer-trail",
+      "plan": "free"
+    },
+    {
+      "id": "explorer-treeline",
+      "plan": "free"
+    },
+    {
+      "id": "explorer-wave-hatching",
+      "plan": "max"
+    },
+    {
+      "id": "explorer-waymarkers",
+      "plan": "plus"
+    },
+    {
+      "id": "explorer-wind-pines",
+      "plan": "max"
+    },
+    {
+      "id": "gradient-blue_haze",
+      "plan": "free"
+    },
+    {
+      "id": "gradient-butter_light",
+      "plan": "free"
+    },
+    {
+      "id": "gradient-cool_gray",
+      "plan": "free"
+    },
+    {
+      "id": "gradient-lavender_veil",
+      "plan": "plus"
+    },
+    {
+      "id": "gradient-peach_glow",
+      "plan": "plus"
+    },
+    {
+      "id": "gradient-rose_wash",
+      "plan": "plus"
+    },
+    {
+      "id": "gradient-sage_mist",
+      "plan": "max"
+    },
+    {
+      "id": "gradient-sand_glow",
+      "plan": "max"
+    },
+    {
+      "id": "gradient-silver_fade",
+      "plan": "max"
+    },
+    {
+      "id": "gradient-warm_ivory",
+      "plan": "max"
+    },
+    {
+      "id": "mannequin-awnings",
+      "plan": "plus"
+    },
+    {
+      "id": "mannequin-backdrop-seam",
+      "plan": "max"
+    },
+    {
+      "id": "mannequin-bridge",
+      "plan": "max"
+    },
+    {
+      "id": "mannequin-drape",
+      "plan": "max"
+    },
+    {
+      "id": "mannequin-dress-forms",
+      "plan": "max"
+    },
+    {
+      "id": "mannequin-folded-stack",
+      "plan": "free"
+    },
+    {
+      "id": "mannequin-full-rail",
+      "plan": "max"
+    },
+    {
+      "id": "mannequin-garment-bags",
+      "plan": "plus"
+    },
+    {
+      "id": "mannequin-hat-boxes",
+      "plan": "plus"
+    },
+    {
+      "id": "mannequin-highrise",
+      "plan": "free"
+    },
+    {
+      "id": "mannequin-lit-windows",
+      "plan": "max"
+    },
+    {
+      "id": "mannequin-measuring-tape",
+      "plan": "free"
+    },
+    {
+      "id": "mannequin-mirrors",
+      "plan": "plus"
+    },
+    {
+      "id": "mannequin-pattern-pieces",
+      "plan": "plus"
+    },
+    {
+      "id": "mannequin-pins",
+      "plan": "free"
+    },
+    {
+      "id": "mannequin-rail",
+      "plan": "free"
+    },
+    {
+      "id": "mannequin-rooftops",
+      "plan": "plus"
+    },
+    {
+      "id": "mannequin-runway",
+      "plan": "max"
+    },
+    {
+      "id": "mannequin-seat-rows",
+      "plan": "max"
+    },
+    {
+      "id": "mannequin-sewing-table",
+      "plan": "max"
+    },
+    {
+      "id": "mannequin-shears",
+      "plan": "free"
+    },
+    {
+      "id": "mannequin-shoe-shelf",
+      "plan": "plus"
+    },
+    {
+      "id": "mannequin-shopfronts",
+      "plan": "plus"
+    },
+    {
+      "id": "mannequin-spools",
+      "plan": "free"
+    },
+    {
+      "id": "mannequin-spotlights",
+      "plan": "plus"
+    },
+    {
+      "id": "mannequin-step-repeat",
+      "plan": "max"
+    },
+    {
+      "id": "mannequin-street-lamps",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-alternating_arcs",
+      "plan": "free"
+    },
+    {
+      "id": "pattern-balustrades",
+      "plan": "free"
+    },
+    {
+      "id": "pattern-beetle_shells",
+      "plan": "free"
+    },
+    {
+      "id": "pattern-broken_stripes",
+      "plan": "free"
+    },
+    {
+      "id": "pattern-butterfly_wings",
+      "plan": "free"
+    },
+    {
+      "id": "pattern-cellular_lattices",
+      "plan": "free"
+    },
+    {
+      "id": "pattern-chevron_parquet",
+      "plan": "free"
+    },
+    {
+      "id": "pattern-coffered_ceilings",
+      "plan": "free"
+    },
+    {
+      "id": "pattern-coral_branches",
+      "plan": "free"
+    },
+    {
+      "id": "pattern-dragonflies",
+      "plan": "free"
+    },
+    {
+      "id": "pattern-fanlights",
+      "plan": "free"
+    },
+    {
+      "id": "pattern-feathers",
+      "plan": "free"
+    },
+    {
+      "id": "pattern-fern_fronds",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-fine_basket_weave",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-fish_scales",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-fluted_columns",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-folded_ribbons",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-ginkgo_fans",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-heavy_rain",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-herb_sprigs",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-hexagons",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-houndstooth",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-interlaced_circles",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-iris",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-laurel",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-lotus",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-moths",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-nested_diamonds",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-octagonal_lattice",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-offset_lozenges",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-olive_sprigs",
+      "plan": "plus"
+    },
+    {
+      "id": "pattern-palm_leaves",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-polka_dots",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-radiator_grilles",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-rain",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-reed_stems",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-ripples",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-roses",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-scalloped_cornices",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-seedpods",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-shells",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-sparse_stars",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-steel_beams",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-stepped_arches",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-stepped_meanders",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-sunburst_tiles",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-terrazzo_inlays",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-tiny_checkers",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-x_equals",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-yyy",
+      "plan": "max"
+    },
+    {
+      "id": "pattern-zig_zag",
+      "plan": "max"
+    },
+    {
+      "id": "texture-brushed_paper",
+      "plan": "free"
+    },
+    {
+      "id": "texture-canvas",
+      "plan": "free"
+    },
+    {
+      "id": "texture-chalk",
+      "plan": "free"
+    },
+    {
+      "id": "texture-cotton_paper",
+      "plan": "plus"
+    },
+    {
+      "id": "texture-felt",
+      "plan": "plus"
+    },
+    {
+      "id": "texture-graphite",
+      "plan": "plus"
+    },
+    {
+      "id": "texture-linen",
+      "plan": "max"
+    },
+    {
+      "id": "texture-recycled_paper",
+      "plan": "max"
+    },
+    {
+      "id": "texture-soft_plaster",
+      "plan": "max"
+    },
+    {
+      "id": "texture-vellum",
+      "plan": "max"
+    }
+  ],
+  "badges": [
+    {
+      "number": 1,
+      "file": "/app/badges/badge-01.webp",
+      "width": 512,
+      "height": 512,
+      "name": "The Yata no Kagami",
+      "meaning": "The first pillar is a mirror. Before anything is built, you describe who you are now and put your name to it.",
+      "family": "Pillar",
+      "tier": 1
+    },
+    {
+      "number": 2,
+      "file": "/app/badges/badge-02.webp",
+      "width": 487,
+      "height": 512,
+      "name": "The Owl of Athena",
+      "meaning": "Study begins with attention. You choose a practice and return to it often enough to start noticing what it teaches.",
+      "family": "Study",
+      "tier": 1
+    },
+    {
+      "number": 3,
+      "file": "/app/badges/badge-03.webp",
+      "width": 512,
+      "height": 486,
+      "name": "The Agora",
+      "meaning": "Progress is witnessed. You step into the shared space, say how it went, and answer what others have said.",
+      "family": "Community",
+      "tier": 1
+    },
+    {
+      "number": 4,
+      "file": "/app/badges/badge-04.webp",
+      "width": 512,
+      "height": 382,
+      "name": "The Salmon of Knowledge",
+      "meaning": "Depth comes from repetition. The same pattern, done again and again, teaches what a single attempt cannot.",
+      "family": "Study",
+      "tier": 2
+    },
+    {
+      "number": 5,
+      "file": "/app/badges/badge-05.webp",
+      "width": 267,
+      "height": 512,
+      "name": "The Hourglass",
+      "meaning": "A streak is built on punctuality. You start when you said you would, inside the window you set.",
+      "family": "Streak",
+      "tier": 1
+    },
+    {
+      "number": 6,
+      "file": "/app/badges/badge-06.webp",
+      "width": 512,
+      "height": 281,
+      "name": "The Gauntlet",
+      "meaning": "You stop competing only with yourself. Naming someone else raises the cost of giving up.",
+      "family": "Challenge",
+      "tier": 1
+    },
+    {
+      "number": 7,
+      "file": "/app/badges/badge-07.webp",
+      "width": 379,
+      "height": 512,
+      "name": "Janus",
+      "meaning": "The middle pillar looks both ways. Far enough in to have evidence, early enough to change direction.",
+      "family": "Pillar",
+      "tier": 2
+    },
+    {
+      "number": 8,
+      "file": "/app/badges/badge-08.webp",
+      "width": 512,
+      "height": 510,
+      "name": "The Bodhi Tree",
+      "meaning": "Long practice, not intensity. Twenty repetitions of one pattern is a different thing from twenty scattered efforts.",
+      "family": "Study",
+      "tier": 3
+    },
+    {
+      "number": 9,
+      "file": "/app/badges/badge-09.webp",
+      "width": 512,
+      "height": 510,
+      "name": "The Round Table",
+      "meaning": "You give as much attention as you take, meeting the people around you as equals rather than an audience.",
+      "family": "Community",
+      "tier": 2
+    },
+    {
+      "number": 10,
+      "file": "/app/badges/badge-10.webp",
+      "width": 404,
+      "height": 512,
+      "name": "The Endless Knot",
+      "meaning": "The chain matters more than any link. Ten in a row proves the practice survives ordinary days.",
+      "family": "Streak",
+      "tier": 2
+    },
+    {
+      "number": 11,
+      "file": "/app/badges/badge-11.webp",
+      "width": 432,
+      "height": 512,
+      "name": "Nkonsonkonson",
+      "meaning": "Community stops being occasional. You show up for others often enough that they can count on it.",
+      "family": "Community",
+      "tier": 3
+    },
+    {
+      "number": 12,
+      "file": "/app/badges/badge-12.webp",
+      "width": 512,
+      "height": 505,
+      "name": "The Celtic Knot",
+      "meaning": "A challenge repeated is a harder thing than a challenge accepted. You keep issuing them after the novelty has gone.",
+      "family": "Challenge",
+      "tier": 2
+    },
+    {
+      "number": 13,
+      "file": "/app/badges/badge-13.webp",
+      "width": 200,
+      "height": 512,
+      "name": "The Djed",
+      "meaning": "The last pillar asks who you are now, with a record long enough to answer honestly.",
+      "family": "Pillar",
+      "tier": 3
+    },
+    {
+      "number": 14,
+      "file": "/app/badges/badge-14.webp",
+      "width": 411,
+      "height": 512,
+      "name": "The Atash Behram",
+      "meaning": "The flame is kept, not lit. A twenty-day streak is maintenance, and maintenance is the harder discipline.",
+      "family": "Streak",
+      "tier": 3
+    },
+    {
+      "number": 15,
+      "file": "/app/badges/badge-15.webp",
+      "width": 512,
+      "height": 456,
+      "name": "The Kotinos",
+      "meaning": "The final trial is finishing what others set for you, and having the record to show for it.",
+      "family": "Challenge",
+      "tier": 3
+    }
+  ]
+}

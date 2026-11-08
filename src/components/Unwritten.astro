@@ -1,0 +1,14 @@
+---
+// Body of a required page whose text does not exist yet. The page stays out of
+// search results until the real text replaces this.
+interface Props {
+  title: string;
+  needs: string;
+}
+const { title, needs } = Astro.props;
+---
+
+<section class="mx-auto max-w-2xl px-4 py-16">
+  <h1 class="text-4xl font-bold">{title}</h1>
+  <p class="mt-6 text-ink-60">This page is not written yet. {needs}</p>
+</section>

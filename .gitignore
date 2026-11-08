@@ -41,3 +41,7 @@ Thumbs.db
 # Misc
 *.pem
 *.p8
+
+# Capture working files
+.media-cache/
+.astro/

@@ -1,0 +1,284 @@
+/* The iPhone, iPad and Apple Watch bodies drawn by Device.tsx. Every length
+   is in cqw, a hundredth of the device's width, so each body keeps its
+   proportions at any size. The iPhone values are the defaults; the iPad and
+   the Watch override them below. Colours come from the --site-device-* tokens
+   in site.css. */
+
+.device {
+  --device-radius: 16cqw;
+  --device-depth: 0.6cqw;
+  --device-frame-width: 0.9cqw;
+  --device-bezel: 2.3cqw;
+  --device-screen-radius: 12.8cqw;
+  --device-rx: 4deg;
+  --device-ry: 0deg;
+
+  container-type: inline-size;
+  max-width: 100%;
+  flex: none;
+  perspective: 1400px;
+}
+
+.device[data-tilt="left"] {
+  --device-ry: 24deg;
+}
+
+.device[data-tilt="right"] {
+  --device-ry: -24deg;
+}
+
+.device[data-tilt="flat"] {
+  --device-rx: 0deg;
+}
+
+.device-body {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--device-rx)) rotateY(var(--device-ry));
+  transition: transform 0.6s ease;
+}
+
+.device:hover .device-body {
+  transform: rotateX(calc(var(--device-rx) * 0.5)) rotateY(calc(var(--device-ry) * 0.5));
+}
+
+.device-edge {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--device-radius);
+  background: var(--site-device-edge);
+  transform: translateZ(calc(var(--i) * var(--device-depth) * -1));
+}
+
+/* The chamfers at the front and back of the band catch the light. */
+.device-edge:first-child,
+.device-edge:nth-child(16) {
+  background: var(--site-device-edge-light);
+}
+
+.device-edge:nth-child(16) {
+  box-shadow: 0 8cqw 14cqw -4cqw var(--site-device-shadow);
+}
+
+.device-button {
+  position: absolute;
+  width: 1.4cqw;
+  border-radius: 0.5cqw;
+  background: var(--site-device-edge-light);
+  transform: translateZ(calc(var(--device-depth) * -8));
+}
+
+.device-button-action {
+  top: 36cqw;
+  left: -0.7cqw;
+  height: 7cqw;
+}
+
+.device-button-volume-up {
+  top: 49cqw;
+  left: -0.7cqw;
+  height: 13cqw;
+}
+
+.device-button-volume-down {
+  top: 65cqw;
+  left: -0.7cqw;
+  height: 13cqw;
+}
+
+.device-button-side {
+  top: 56cqw;
+  right: -0.7cqw;
+  height: 21cqw;
+}
+
+.device-face {
+  position: relative;
+  border: var(--device-frame-width) solid var(--site-device-frame);
+  border-radius: var(--device-radius);
+  background: var(--site-device-bezel);
+  padding: var(--device-bezel);
+}
+
+.device-screen {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: var(--device-screen-aspect, 1290 / 2796);
+  border-radius: var(--device-screen-radius);
+  background: var(--site-device-bezel);
+}
+
+.device-screen > img,
+.device-screen > video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.device-island {
+  position: absolute;
+  top: 2.4cqw;
+  left: 50%;
+  width: 27.4cqw;
+  height: 8cqw;
+  border-radius: 4cqw;
+  background: var(--site-device-bezel);
+  translate: -50% 0;
+}
+
+.device-glare {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, var(--site-device-glare), transparent 38%);
+  pointer-events: none;
+}
+
+/* iPad Pro 13-inch: a thin slab with an even bezel and the front camera on a
+   long edge. Landscape first; portrait, below, scales the same body to its
+   narrower width. */
+
+.device[data-model="ipad"] {
+  --device-radius: 3.4cqw;
+  --device-depth: 0.1cqw;
+  --device-frame-width: 0.35cqw;
+  --device-bezel: 1.9cqw;
+  --device-screen-radius: 1.9cqw;
+}
+
+.device[data-model="ipad"][data-tilt="left"] {
+  --device-ry: 14deg;
+}
+
+.device[data-model="ipad"][data-tilt="right"] {
+  --device-ry: -14deg;
+}
+
+.device-button-top {
+  top: -0.25cqw;
+  right: 8cqw;
+  width: 6cqw;
+  height: 0.6cqw;
+}
+
+.device[data-model="ipad"] .device-button-volume-up,
+.device[data-model="ipad"] .device-button-volume-down {
+  top: -0.25cqw;
+  left: auto;
+  width: 4.5cqw;
+  height: 0.6cqw;
+}
+
+.device[data-model="ipad"] .device-button-volume-up {
+  right: 16cqw;
+}
+
+.device[data-model="ipad"] .device-button-volume-down {
+  right: 21.5cqw;
+}
+
+.device-camera {
+  position: absolute;
+  top: 0.6cqw;
+  left: 50%;
+  width: 0.7cqw;
+  height: 0.7cqw;
+  border-radius: 50%;
+  background: var(--site-device-edge);
+  translate: -50% 0;
+}
+
+.device[data-model="ipad"][data-orientation="portrait"] {
+  --device-radius: 4.5cqw;
+  --device-frame-width: 0.47cqw;
+  --device-bezel: 2.5cqw;
+  --device-screen-radius: 2.5cqw;
+}
+
+.device[data-model="ipad"][data-orientation="portrait"] .device-button-top {
+  right: 10cqw;
+  width: 8cqw;
+}
+
+.device[data-model="ipad"][data-orientation="portrait"] .device-button-volume-up,
+.device[data-model="ipad"][data-orientation="portrait"] .device-button-volume-down {
+  right: -0.3cqw;
+  width: 0.8cqw;
+  height: 6cqw;
+}
+
+.device[data-model="ipad"][data-orientation="portrait"] .device-button-volume-up {
+  top: 10cqw;
+}
+
+.device[data-model="ipad"][data-orientation="portrait"] .device-button-volume-down {
+  top: 17.5cqw;
+}
+
+.device[data-model="ipad"][data-orientation="portrait"] .device-camera {
+  top: 50%;
+  left: auto;
+  right: 0.8cqw;
+  width: 0.9cqw;
+  height: 0.9cqw;
+  translate: 0 -50%;
+}
+
+/* Apple Watch Series 11, 46mm: a deep rounded case, the Digital Crown and the
+   side button on the right, and the band running off above and below. */
+
+.device[data-model="watch"] {
+  --device-radius: 24cqw;
+  --device-depth: 1.4cqw;
+  --device-frame-width: 2.2cqw;
+  --device-bezel: 6cqw;
+  --device-screen-radius: 15cqw;
+}
+
+.device[data-model="watch"] .device-button {
+  width: 4cqw;
+  right: -3cqw;
+  left: auto;
+  border-radius: 1.4cqw;
+}
+
+.device-button-crown {
+  top: 24cqw;
+  height: 18cqw;
+  background: repeating-linear-gradient(var(--site-device-edge-light) 0 1cqw, var(--site-device-edge) 1cqw 1.6cqw);
+}
+
+.device[data-model="watch"] .device-button-side {
+  top: 56cqw;
+  right: -1.6cqw;
+  width: 2.6cqw;
+  height: 22cqw;
+}
+
+.device-band {
+  position: absolute;
+  left: 50%;
+  width: 76cqw;
+  height: 70cqw;
+  background: var(--site-device-band);
+  translate: -50% 0;
+  transform: translateZ(calc(var(--device-depth) * -8));
+}
+
+.device-band-top {
+  bottom: 70%;
+  border-radius: 6cqw 6cqw 0 0;
+  mask-image: linear-gradient(to top, black 45%, transparent);
+}
+
+.device-band-bottom {
+  top: 70%;
+  border-radius: 0 0 6cqw 6cqw;
+  mask-image: linear-gradient(to bottom, black 45%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .device-body {
+    transition: none;
+  }
+}

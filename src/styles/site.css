@@ -1,0 +1,52 @@
+/* The site's own tokens. Components use these, never the --paths-* tokens or
+   raw values, so the site's look is decided in this one file.
+
+   Colours start from the app's light palette (app-tokens.css). */
+
+:root {
+  --site-font: var(--paths-font-family);
+
+  /* One light theme. The page is a warm off-white and cards are white, so
+     they lift off it. The values are fixed here because app-tokens.css turns
+     dark with the system setting, and the site does not. */
+  color-scheme: light;
+
+  --site-ink: #1e1c1d;
+  --site-ink-60: rgb(30 28 29 / 68%);
+  --site-ink-40: rgb(30 28 29 / 45%);
+  --site-paper: #f6f5f1;
+  --site-surface: #ffffff;
+  --site-mist: #e2e1da;
+
+  --site-sage: #87a56e;
+  --site-clay: #ce8b6c;
+  --site-ochre: #eecd84;
+  --site-fjord: #639a88;
+
+  /* The iPhone, iPad and Watch bodies around each capture (Device.tsx). */
+  --site-device-frame: #b9b5ae;
+  --site-device-edge: #8e8a84;
+  --site-device-edge-light: #cfcbc4;
+  --site-device-bezel: #0b0b0c;
+  --site-device-glare: rgb(255 255 255 / 12%);
+  --site-device-shadow: rgb(30 28 29 / 30%);
+  /* The Watch's band, a dark sport band. */
+  --site-device-band: #46423f;
+
+  /* The ground behind the app's artwork: badges, avatars and calendar
+     backgrounds. */
+  --site-art-ground: #ffffff;
+  --site-art-ink: #1e1c1d;
+
+  /* The three plans: desaturated bronze, silver and gold, each as the dark,
+     light and mid stops of the gradient round its card (global.css). */
+  --site-bronze-deep: #8c6a55;
+  --site-bronze-light: #d9bba6;
+  --site-bronze: #a9826b;
+  --site-silver-deep: #84888c;
+  --site-silver-light: #dfe2e4;
+  --site-silver: #a7abaf;
+  --site-gold-deep: #9c8550;
+  --site-gold-light: #e8d9a8;
+  --site-gold: #bda468;
+}

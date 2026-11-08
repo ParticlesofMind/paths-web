@@ -1,16 +1,19 @@
 ---
 import "../styles/global.css";
+import appStore from "../content/app-store.json";
+import { site } from "../content/site";
+import SiteHeader from "../components/sections/SiteHeader";
+import SiteFooter from "../components/sections/SiteFooter";
 
 interface Props {
   title?: string;
   description?: string;
+  /** Keeps a page out of search results, for pages that are not ready to be found. */
+  noindex?: boolean;
 }
 
-const {
-  title = "Paths — Join the Revolution",
-  description =
-    "Paths helps you build lasting habits through structured patterns, community accountability, and daily progress tracking. Available on iOS.",
-} = Astro.props;
+const { title, description = appStore.promotionalText, noindex = false } = Astro.props;
+const fullTitle = title ? `${title} · ${site.name}` : `${site.name} · ${appStore.subtitle}`;
 ---
 
 <!doctype html>
@@ -18,20 +21,33 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
+    <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      html { scroll-behavior: smooth; }
-      body { font-family: 'Inter', system-ui, sans-serif; }
-    </style>
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="preload" href="/fonts/Jost-Regular.ttf" as="font" type="font/ttf" crossorigin />
   </head>
   <body>
-    <slot />
+    <SiteHeader />
+    <main>
+      <slot />
+    </main>
+    <SiteFooter />
+
+    <script>
+      // Screen recordings play only while they are on screen, and not at all
+      // for people who asked for reduced motion.
+      const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            const video = entry.target as HTMLVideoElement;
+            if (entry.isIntersecting && !reduced) video.play().catch(() => {});
+            else video.pause();
+          }
+        },
+        { threshold: 0.4 },
+      );
+      document.querySelectorAll<HTMLVideoElement>("video[data-app-clip]").forEach((video) => observer.observe(video));
+    </script>
   </body>
 </html>
