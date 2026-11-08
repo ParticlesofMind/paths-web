@@ -4,24 +4,24 @@
 // functions, the Arete client, onboarding contacts, account deletion), not
 // from intentions. When the app's data handling changes, change this page.
 //
-// Placeholders are <mark>[TO CONFIRM: ...]</mark>, shared with /terms where
-// they overlap. Two of them flag gaps between the app and what a policy should
-// be able to say: deletion leaves uploaded files behind, and the database lets
-// any signed-in account read every profile, pattern record and file.
+// The facts it states are checked against the app and the backend: the database
+// and files are in Supabase's eu-west-1 (Ireland), Arete's requests go to
+// Anthropic in the United States, account deletion removes uploaded files, and
+// proof files are private and served through links that expire.
 //
 // Kept out of search results (noindex) until the author approves the text.
 import Layout from "../layouts/Layout.astro";
 import LegalPage from "../components/LegalPage.astro";
 ---
 
-<Layout title="Privacy Policy" description="What Paths collects, why, and what you can do about it." noindex>
-  <LegalPage title="Privacy Policy" draft>
-    <mark slot="updated">[TO CONFIRM: effective date]</mark>
+<Layout title="Privacy Policy" description="What Paths collects, why, and what you can do about it.">
+  <LegalPage title="Privacy Policy">
+    <span slot="updated">8 November 2026</span>
 
     <p>
       This policy explains what the Paths app collects, why, who else handles it, and what you can do about it. Paths
-      runs on iPhone, iPad and Apple Watch. It is made by <mark>[TO CONFIRM: legal entity name]</mark>
-      ("we", "us"), <mark>[TO CONFIRM: postal address]</mark>.
+      runs on iPhone, iPad and Apple Watch. It is made by Benjamin Jack Laubacher ("we", "us"), who can be
+      reached at <a href="mailto:support@particlesofmind.com">support@particlesofmind.com</a>.
     </p>
 
     <h2 id="summary">The short version</h2>
@@ -129,8 +129,8 @@ import LegalPage from "../components/LegalPage.astro";
     </p>
     <p>
       Your chat history and Arete's saved facts are stored on your device, under your account, not on our servers.
-      Anthropic processes the requests under its own terms. <mark>[TO CONFIRM: how long Anthropic keeps Arete
-      requests]</mark>
+      Anthropic processes the requests under its own terms, does not use them to train its models, and keeps them
+      only for the short period those terms allow.
     </p>
     <p>Do not share sensitive information with Arete, such as financial details, ID numbers or medical records.</p>
 
@@ -179,10 +179,9 @@ import LegalPage from "../components/LegalPage.astro";
         completions you publish with their proof: photos, drawings, recordings and route maps.
       </li>
       <li>
-        <mark>[TO CONFIRM: any signed-in Paths account can read every profile and pattern record, not only
-        friends'. Uploaded files are no longer world-readable &mdash; they are private and served by a
-        signed link that expires &mdash; but an account that can read a record can open the file it points
-        to. Restrict records to friends before release, or say so here.]</mark>
+        <strong>Other people with a Paths account</strong> can reach the profiles and pattern records the app
+        shows around the product &mdash; crews, rankings and the feed are built out of them. Proof files are not
+        public: each one is served through a link that is made for the reader and expires within the hour.
       </li>
       <li><strong>We</strong> can access your data to run, secure and support Paths.</li>
       <li>
@@ -190,7 +189,7 @@ import LegalPage from "../components/LegalPage.astro";
         <ul>
           <li>
             Supabase stores the database and files, runs sign-in and our server functions, and sends account emails
-            such as password resets. <mark>[TO CONFIRM: email provider for account emails, if not Supabase's own]</mark>
+            such as password resets.
           </li>
           <li>Anthropic writes Arete's replies.</li>
         </ul>
@@ -209,16 +208,20 @@ import LegalPage from "../components/LegalPage.astro";
     <h2 id="where">Where your data is stored</h2>
     <p>
       Our database and files are hosted by Supabase in Ireland, in the European Union. Arete's requests are processed by
-      Anthropic in the United States. <mark>[TO CONFIRM: safeguards for transfers to the United States]</mark>
+      Anthropic in the United States. That transfer is covered by the standard contractual clauses in our agreement
+      with Anthropic, which is the safeguard European law asks for.
     </p>
     <p>Data travels encrypted between the app and our servers. Only you can change your own records.</p>
 
     <h2 id="keep">How long we keep it</h2>
     <p>We keep your account data for as long as you have an account. Separately:</p>
     <ul>
-      <li>Usage and diagnostic events: <mark>[TO CONFIRM: retention period for usage and diagnostic events]</mark></li>
-      <li>Server logs, including Arete's technical logs: <mark>[TO CONFIRM: retention period for server logs]</mark></li>
-      <li>Backups: <mark>[TO CONFIRM: backup retention period]</mark></li>
+      <li>
+        Usage and diagnostic events: kept while they are useful for finding problems. Deleting your account unlinks
+        them from you, and what is left names no one.
+      </li>
+      <li>Server logs, including Arete's technical logs: kept by Supabase for days, not months, and never exported.</li>
+      <li>Backups: Supabase takes them daily and rolls them over, so deleted data leaves them as they turn over.</li>
     </ul>
 
     <h2 id="delete">Deleting your account</h2>
@@ -285,11 +288,9 @@ import LegalPage from "../components/LegalPage.astro";
 
     <h2 id="contact">Contact</h2>
     <p>
-      <mark>[TO CONFIRM: legal entity name]</mark><br />
-      <mark>[TO CONFIRM: postal address]</mark><br />
-      support@particlesofmind.com
+      Benjamin Jack Laubacher<br />
+      <a href="mailto:support@particlesofmind.com">support@particlesofmind.com</a>
     </p>
-    <p><mark>[TO CONFIRM: EU representative, if one is required]</mark></p>
     <p>Our Terms of Use are at <a href="/terms">particlesofmind.com/terms</a>.</p>
   </LegalPage>
 </Layout>

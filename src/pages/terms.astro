@@ -5,27 +5,18 @@
 // "October 8, 2026"), including 15.1: deleting the account does not cancel a
 // subscription bought through Apple. Change the two together.
 //
-// Where this page differs from the in-app text, on purpose:
-// - Clause 1: the contracting party is [TO CONFIRM: legal entity name]. The
-//   in-app text names Benjamin Jack Laubacher.
-// - Clause 16: the governing law is [TO CONFIRM: governing law and
-//   jurisdiction]. The in-app text says the laws of Switzerland.
-// - Clause 19: the address is support@particlesofmind.com. The in-app text
-//   gives a personal Gmail address.
-// - Clauses 8 and 19: the in-app text prints the URLs configured in the
-//   build (PATHS_PRIVACY_POLICY_URL, PATHS_TERMS_URL, both still empty); here
-//   they are links to /privacy and /terms.
-// - The date is [TO CONFIRM: effective date]. The in-app text says
-//   October 8, 2026.
-//
-// Kept out of search results (noindex) until the author approves the text.
+// The party, the governing law and the contact address match the in-app text:
+// Benjamin Jack Laubacher, the laws of Switzerland, support@particlesofmind.com.
+// Two things differ on purpose: the date is the date this page went up, and
+// clauses 8 and 19 link to /privacy and /terms rather than printing the URLs
+// configured in the build.
 import Layout from "../layouts/Layout.astro";
 import LegalPage from "../components/LegalPage.astro";
 ---
 
-<Layout title="Terms of Use" description="The terms for using Paths." noindex>
-  <LegalPage title="Terms of Use" draft>
-    <mark slot="updated">[TO CONFIRM: effective date]</mark>
+<Layout title="Terms of Use" description="The terms for using Paths.">
+  <LegalPage title="Terms of Use">
+    <span slot="updated">8 November 2026</span>
 
     <h2 id="s1">1. Acceptance of Terms</h2>
     <p>
@@ -33,7 +24,7 @@ import LegalPage from "../components/LegalPage.astro";
       Conditions ("Terms"). If you do not agree to these Terms, do not create an account or use the App.
     </p>
     <p>
-      These Terms constitute a legally binding agreement between you and <mark>[TO CONFIRM: legal entity name]</mark>
+      These Terms constitute a legally binding agreement between you and Benjamin Jack Laubacher
       ("we," "us," or "our"). By tapping "Agree &amp; Continue" during sign-up, you confirm that you have read,
       understood, and accepted these Terms in full.
     </p>
@@ -331,8 +322,8 @@ import LegalPage from "../components/LegalPage.astro";
 
     <h2 id="s16">16. Governing Law and Dispute Resolution</h2>
     <p>
-      These Terms are governed by and construed in accordance with the laws of
-      <mark>[TO CONFIRM: governing law and jurisdiction]</mark>, without regard to its conflict of law provisions.
+      These Terms are governed by and construed in accordance with the laws of Switzerland, without regard to its
+      conflict of law provisions.
     </p>
     <p>
       Any dispute arising out of or relating to these Terms or the App shall first be submitted to informal
@@ -376,9 +367,9 @@ import LegalPage from "../components/LegalPage.astro";
 
     <h2 id="s19">19. Contact</h2>
     <p>If you have any questions about these Terms, please contact us at:</p>
-    <p>support@particlesofmind.com</p>
+    <p><a href="mailto:support@particlesofmind.com">support@particlesofmind.com</a></p>
     <p>Privacy Policy URL: <a href="/privacy">https://particlesofmind.com/privacy</a></p>
     <p>Terms &amp; Conditions URL: <a href="/terms">https://particlesofmind.com/terms</a></p>
-    <p>These Terms were last updated on <mark>[TO CONFIRM: effective date]</mark>.</p>
+    <p>These Terms were last updated on 8 November 2026.</p>
   </LegalPage>
 </Layout>
