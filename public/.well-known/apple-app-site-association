@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["3FLD9UYVVR.com.particlesofmind.paths"],
+        "components": [
+          {
+            "/": "/invite",
+            "comment": "An invite opens in Paths when it is installed."
+          },
+          {
+            "/": "/invite/",
+            "comment": "The same page with the trailing slash the site serves."
+          }
+        ]
+      }
+    ]
+  }
+}
