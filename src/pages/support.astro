@@ -1,8 +1,84 @@
 ---
+// Support page. The App Store listing and the app both publish this URL as the
+// place to get help (PATHS_SUPPORT_URL), so it has to answer without a login.
+// Written from what the app actually does: Apple handles billing, account
+// deletion is in Profile > Settings, blocking is in the crew, the Watch is fed
+// by the phone, and proof links are signed and expire.
+//
+// The contact address is support@particlesofmind.com, the same address the
+// in-app Report button mails and clause 19 of the Terms names.
 import Layout from "../layouts/Layout.astro";
-import Unwritten from "../components/Unwritten.astro";
+import LegalPage from "../components/LegalPage.astro";
 ---
 
-<Layout title="Support" noindex>
-  <Unwritten title="Support" needs="It needs a contact address and answers to common questions." />
+<Layout title="Support" description="How to get help with Paths, and answers to the questions that come up most.">
+  <LegalPage title="Support">
+    <span slot="updated">8 November 2026</span>
+
+    <p>
+      Paths is a habit app for iPhone, iPad and Apple Watch. If something is wrong, or you cannot find an answer
+      below, write to <a href="mailto:support@particlesofmind.com">support@particlesofmind.com</a> and you will get a
+      reply within <mark>[TO CONFIRM: response time, e.g. two working days]</mark>.
+    </p>
+
+    <h2 id="account">I cannot sign in</h2>
+    <p>
+      Tap <strong>Forgot password</strong> on the sign-in screen. The reset link is sent to the address on the account
+      and expires after an hour; ask for a new one if it does. If the address itself is wrong or unreachable, write to
+      support from any address and say which username is affected.
+    </p>
+
+    <h2 id="subscription">Billing, cancelling and refunds</h2>
+    <p>
+      Subscriptions are bought through Apple, not through us, so they are managed in
+      <strong>Settings &rsaquo; your name &rsaquo; Subscriptions</strong> on your device. Cancelling there stops the
+      next renewal and leaves the plan running until the period you have paid for ends.
+    </p>
+    <p>
+      Refunds are Apple's to give: ask at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. We
+      cannot issue them, and we cannot see your payment details.
+    </p>
+    <p>
+      <strong>Deleting your Paths account does not cancel a subscription bought through Apple.</strong> Cancel it in
+      Settings as well, or it keeps renewing.
+    </p>
+
+    <h2 id="delete">Deleting your account and your data</h2>
+    <p>
+      In the app: <strong>Profile &rsaquo; Settings &rsaquo; Delete account</strong>. This removes your profile, your
+      patterns, the proof you uploaded, your crew membership and your messages. It cannot be undone, and it is not
+      reversible by writing to support afterwards.
+    </p>
+    <p>To take a copy with you first, use <strong>Download my data</strong> on the same screen.</p>
+
+    <h2 id="reporting">Reporting someone, or blocking them</h2>
+    <p>
+      Touch and hold a message or a member in your crew. <strong>Report</strong> sends it to us for review.
+      <strong>Block member</strong> removes everything that member posts or says from your feed straight away; the
+      blocked list is on the crew's info screen, and a block can be undone there.
+    </p>
+    <p>
+      Anything urgent, or anything involving a minor or a threat, goes to
+      <a href="mailto:support@particlesofmind.com">support@particlesofmind.com</a> with "urgent" in the subject.
+    </p>
+
+    <h2 id="watch">The Watch app is not showing today's patterns</h2>
+    <p>
+      Open Paths on the iPhone once with the Watch nearby: the Watch is sent the day's patterns from the phone, and it
+      cannot fetch them on its own. If the list is still empty, check that Paths is installed on the Watch in the
+      iPhone's Watch app, and that both devices are on the same day's date.
+    </p>
+
+    <h2 id="proof">A photo or recording I submitted will not open</h2>
+    <p>
+      Proof is stored privately and the app signs a fresh link each time it shows one. A link that has been open on
+      screen for over an hour can expire; tap <strong>Retry image</strong>, or leave the screen and come back.
+    </p>
+
+    <h2 id="privacy">Privacy and terms</h2>
+    <p>
+      What we collect and why is in the <a href="/privacy">Privacy Policy</a>. The rules for using Paths are in the
+      <a href="/terms">Terms of Use</a>.
+    </p>
+  </LegalPage>
 </Layout>
